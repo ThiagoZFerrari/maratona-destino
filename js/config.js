@@ -1,18 +1,14 @@
-// ============================================================
-//  CONFIGURAÇÃO DO SITE — é só este arquivo que você precisa editar
-//  Tudo aqui é opcional: o que ficar vazio, o site só esconde.
-// ============================================================
 window.MARATONA_CONFIG = {
 
   // Endereço final do site (usado no link do e-mail de login e no card dos stories)
   // Ex.: "https://seuusuario.github.io/maratona-destino/"
-  siteUrl: "https://thiagozferrari.github.io/maratona-destino/",
+  siteUrl: "https://maratonamultiverso.com.br/",
 
   // ---- Supabase (login + salvar conquistas na nuvem + estatísticas da comunidade)
   // Pegue em: Supabase > Project Settings > API
   // A "anon key" pode ficar pública, a segurança é feita pelas regras do schema.sql
-  supabaseUrl: "",
-  supabaseAnonKey: "",
+  supabaseUrl: "https://zmfkmzyhwcpoqzrkgcjm.supabase.co",
+  supabaseAnonKey: "sb_publishable_RjVt8zfYR4QPIXTUzDYSsQ_7Piy4nfI",
 
   // ---- GoatCounter (contador de acessos)
   // Se o seu painel é https://maratona.goatcounter.com, coloque só "maratona"
