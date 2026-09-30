@@ -347,7 +347,12 @@ function renderConquistas() {
 // ============ nuvem (Supabase) ============
 function iniciarNuvem() {
   if (!CFG.supabaseUrl || !CFG.supabaseAnonKey || !window.supabase) return;
-  sb = window.supabase.createClient(CFG.supabaseUrl, CFG.supabaseAnonKey);
+  sb = window.supabase.createClient(CFG.supabaseUrl, CFG.supabaseAnonKey, 
+  { auth: { flowType: "implicit", 
+  detectSessionInUrl: true, persistSession: true } });
+  const erroLogin = new URLSearchParams(location.hash.slice(1) || 
+  location.search.slice(1)).get("error_description");
+  if (erroLogin) aviso("Erro no login: " + erroLogin.replace(/\+/g, " "));
   $("#contaBox").hidden = false;
   $("#btnConta").onclick = () => sessao ? sair() : abrirLogin();
   sb.auth.onAuthStateChange((_evento, s) => {
