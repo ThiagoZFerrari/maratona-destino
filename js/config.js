@@ -6,7 +6,7 @@ window.MARATONA_CONFIG = {
 
   // Endereço final do site (usado no link do e-mail de login e no card dos stories)
   // Ex.: "https://seuusuario.github.io/maratona-destino/"
-  siteUrl: "",
+  siteUrl: "https://thiagozferrari.github.io/maratona-destino/",
 
   // ---- Supabase (login + salvar conquistas na nuvem + estatísticas da comunidade)
   // Pegue em: Supabase > Project Settings > API
