@@ -1,0 +1,2016 @@
+[
+ {
+  "id": "x-men",
+  "titulo": "X-Men",
+  "ano": 2000,
+  "tipo": "filme",
+  "franquia": "xmen",
+  "bloco": 1,
+  "en": "X-Men",
+  "tmdb": 36657,
+  "poster": "/eTAK1gU8vTaHt0W9I6PFYQsdhKP.jpg",
+  "backdrop": "/3QUVzbcNyfGe3ocWkYAT8emK8Co.jpg",
+  "sinopse": "Eles são filhos do átomo superior, o próximo elo na corrente da evolução. Cada um nasceu com uma mutação genética rara, que na puberdade se manifestou em poderes extraordinários. Em um mundo cheio de ódio e preconceito, eles são temidos por aqueles que não podem aceitar suas diferenças. Liderados por Xavier, os X-Men lutam para proteger um mundo que os teme. Eles estão presos em uma batalha contra um ex-colega e amigo, Magneto, que acredita que os humanos e os mutantes não devem viver juntos.",
+  "duracao": 104,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/36657-x-men/watch?locale=BR"
+  }
+ },
+ {
+  "id": "homem-aranha",
+  "titulo": "Homem-Aranha",
+  "ano": 2002,
+  "tipo": "filme",
+  "franquia": "sony",
+  "bloco": 1,
+  "en": "Spider-Man",
+  "tmdb": 557,
+  "poster": "/RbZQL5hXmydecu82UHw9ZGyytB.jpg",
+  "backdrop": "/zQ8AxTPiCiS5nnwXpwTBPBHSaa5.jpg",
+  "sinopse": "Peter Parker é um jovem estudioso que vive com seus tios, Ben e May, desde que seus pais faleceram. Peter tem dificuldade em se relacionar com seus colegas, por ser tímido e por eles o considerarem um nerd. Até que, em uma demonstração científica, um acidente inesperado faz com que uma aranha modificada geneticamente pique Peter. A partir de então seu corpo é quimicamente alterado pela picada da aranha.",
+  "duracao": 121,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Amazon Prime Video",
+     "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "nome": "Claro video",
+     "logo": "/zTJg0WVErBkcJv4S9FkQRUyXjnq.png"
+    },
+    {
+     "nome": "HBO Max",
+     "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
+    },
+    {
+     "nome": "Claro tv+",
+     "logo": "/olzQMHt2SX7iNy8WDMR299hVFcL.png"
+    },
+    {
+     "nome": "HBO Max Amazon Channel",
+     "logo": "/64fLWeSyZ1KQZhIdvTdy4QHeWty.png"
+    },
+    {
+     "nome": "Sony One Amazon Channel",
+     "logo": "/COoISLyfBkZ9Vgr5NbjmnxacSb.png"
+    },
+    {
+     "nome": "Amazon Prime Video with Ads",
+     "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+    }
+   ],
+   "aluguel": true,
+   "link": "https://www.themoviedb.org/movie/557-spider-man/watch?locale=BR"
+  }
+ },
+ {
+  "id": "x-men-2",
+  "titulo": "X-Men 2",
+  "ano": 2003,
+  "tipo": "filme",
+  "franquia": "xmen",
+  "bloco": 1,
+  "en": "X2",
+  "tmdb": 36658,
+  "poster": "/pwQo1ehiPBqAbiVqD6rfNM8GCFE.jpg",
+  "backdrop": "/7TYITrR804tLITNur3b8VLCK6tw.jpg",
+  "sinopse": "Stryker, um ex-comandante perverso do exército, tem a chave para o passado de Wolverine e o futuro dos X-Men. Esta ameaça reacende a chamada para um ato de registro mutante. Stryker inicia um ataque à mansão e escola do Professor Xavier. Depois de escapar de sua cela de plástico, Magneto propõe uma parceria com Xavier e os X-Men para combater esse novo inimigo que ambos têm em comum.",
+  "duracao": 134,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/36658-x2/watch?locale=BR"
+  }
+ },
+ {
+  "id": "homem-aranha-2",
+  "titulo": "Homem-Aranha 2",
+  "ano": 2004,
+  "tipo": "filme",
+  "franquia": "sony",
+  "bloco": 1,
+  "en": "Spider-Man 2",
+  "tmdb": 558,
+  "poster": "/xB05Gyeo2w4RBwt7nZlPkjZzt9X.jpg",
+  "backdrop": "/6al048Lat3eLVQOuKtc9h6Tu94d.jpg",
+  "sinopse": "Dois anos se passaram desde que o tranquilo Peter Parker separou-se do grande amor de sua vida, Mary Jane Watson, e decidiu assumir o compromisso e a responsabilidade de seguir sendo o Homem-Aranha. Peter enfrenta novos desafios enquanto aprende a lidar com \"seu dom e sua maldição\", tentando desesperadamente harmonizar suas duas identidades: A do super-herói aracnídeo, o Homem-Aranha, e a do estudante universitário.",
+  "duracao": 137,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Amazon Prime Video",
+     "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "nome": "HBO Max",
+     "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
+    },
+    {
+     "nome": "HBO Max Amazon Channel",
+     "logo": "/64fLWeSyZ1KQZhIdvTdy4QHeWty.png"
+    },
+    {
+     "nome": "Sony One Amazon Channel",
+     "logo": "/COoISLyfBkZ9Vgr5NbjmnxacSb.png"
+    },
+    {
+     "nome": "Amazon Prime Video with Ads",
+     "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+    }
+   ],
+   "aluguel": true,
+   "link": "https://www.themoviedb.org/movie/558-spider-man-2/watch?locale=BR"
+  }
+ },
+ {
+  "id": "x-men-confronto-final",
+  "titulo": "X-Men: O Confronto Final",
+  "ano": 2006,
+  "tipo": "filme",
+  "franquia": "xmen",
+  "bloco": 1,
+  "en": "X-Men: The Last Stand",
+  "tmdb": 36668,
+  "poster": "/rcPewUA6Lszt25wIa1nkW3A82JX.jpg",
+  "backdrop": "/nLMXULCGLnzRxz11txPzPqbOHSz.jpg",
+  "sinopse": "A descoberta de uma cura para as mutações leva os mutantes a um ponto decisivo. Eles podem escolher entre abandonar seus poderes e se tornarem humanos ou continuar com os poderes e permanecerem excluídos. Uma batalha é travada entre os simpatizantes de Charles Xavier, que prega a tolerância, e os seguidores de Magneto, que defende a sobrevivência dos mais fortes.",
+  "duracao": 105,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/36668-x-men-the-last-stand/watch?locale=BR"
+  }
+ },
+ {
+  "id": "homem-aranha-3",
+  "titulo": "Homem-Aranha 3",
+  "ano": 2007,
+  "tipo": "filme",
+  "franquia": "sony",
+  "bloco": 1,
+  "en": "Spider-Man 3",
+  "tmdb": 559,
+  "poster": "/5831VrgpYNPEokBwxurLVpQ3twM.jpg",
+  "backdrop": "/FfAU0PUs8AJkMU2VbkVNFtRXR4.jpg",
+  "sinopse": "O relacionamento entre Peter Parker e Mary Jane parece estar dando certo, mas outros problemas começam a surgir. A roupa de Homem-Aranha torna-se preta e acaba controlando Peter, que apesar de aumentar seus poderes, revela o lado obscuro de sua personalidade. Os vilões Venon e Homem-Areia tentam destruir o super-herói.",
+  "duracao": 139,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Amazon Prime Video",
+     "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "nome": "Claro video",
+     "logo": "/zTJg0WVErBkcJv4S9FkQRUyXjnq.png"
+    },
+    {
+     "nome": "HBO Max",
+     "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
+    },
+    {
+     "nome": "Claro tv+",
+     "logo": "/olzQMHt2SX7iNy8WDMR299hVFcL.png"
+    },
+    {
+     "nome": "HBO Max Amazon Channel",
+     "logo": "/64fLWeSyZ1KQZhIdvTdy4QHeWty.png"
+    },
+    {
+     "nome": "Sony One Amazon Channel",
+     "logo": "/COoISLyfBkZ9Vgr5NbjmnxacSb.png"
+    },
+    {
+     "nome": "Amazon Prime Video with Ads",
+     "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+    }
+   ],
+   "aluguel": true,
+   "link": "https://www.themoviedb.org/movie/559-spider-man-3/watch?locale=BR"
+  }
+ },
+ {
+  "id": "homem-de-ferro",
+  "titulo": "Homem de Ferro",
+  "ano": 2008,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 2,
+  "en": "Iron Man",
+  "tmdb": 1726,
+  "poster": "/mqN7RxojEiPoh3FTSTwOtwg7KAu.jpg",
+  "backdrop": "/cKvDv2LpwVEqbdXWoQl4XgGN6le.jpg",
+  "sinopse": "Tony Stark é um industrial bilionário, que também é um brilhante inventor. Ao ser sequestrado ele é obrigado por terroristas a construir uma arma devastadora mas, ao invés disto, constrói uma armadura de alta tecnologia que permite que fuja de seu cativeiro. A partir de então ele passa a usá-la para combater o crime, sob o alter ego do Homem de Ferro.",
+  "duracao": 126,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/1726-iron-man/watch?locale=BR"
+  }
+ },
+ {
+  "id": "incrivel-hulk",
+  "titulo": "O Incrível Hulk",
+  "ano": 2008,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 2,
+  "en": "The Incredible Hulk",
+  "tmdb": 1724,
+  "poster": "/v1UXe9WlwkkZ5YrffUSPdYNeJz3.jpg",
+  "backdrop": "/xfBnQ4mgf1jYZsscJGJjr6ce0Ar.jpg",
+  "sinopse": "Vivendo escondido e longe de Betty Ross, a mulher que ama, o cientista Bruce Banner busca um meio de retirar a radiação gama que está em seu sangue. Ao mesmo tempo ele precisa fugir da perseguição do general Ross, seu grande inimigo, e da máquina militar que tenta capturá-lo, na intenção de explorar o poder que faz com que Banner se transforme no Hulk.",
+  "duracao": 120,
+  "onde": {
+   "streaming": [],
+   "aluguel": true,
+   "link": "https://www.themoviedb.org/movie/1724-the-incredible-hulk/watch?locale=BR"
+  }
+ },
+ {
+  "id": "x-men-origens-wolverine",
+  "titulo": "X-Men Origens: Wolverine",
+  "ano": 2009,
+  "tipo": "filme",
+  "franquia": "xmen",
+  "bloco": 2,
+  "en": "X-Men Origins: Wolverine",
+  "tmdb": 2080,
+  "poster": "/a3V6xhrI4gpMv4MI5RKj9AtK3Nf.jpg",
+  "backdrop": "/p4GzAzjlL7lXIVGvayg7zvzGTSi.jpg",
+  "sinopse": "Tentando esquecer seu passado sombrio, Logan, mais conhecido como Wolverine, parece ter encontrado o amor e a felicidade com Kayla Silverfox. Mas a paz de Logan é abalada quando Victor Creed, seu irmão cruel, assassina brutalmente Kayla. A sede de vingança de Logan o leva ao programa Arma X. Ele passa por um processo doloroso para fortalecer seus ossos com adamantium, o que o torna praticamente indestrutível.",
+  "duracao": 108,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/2080-x-men-origins-wolverine/watch?locale=BR"
+  }
+ },
+ {
+  "id": "homem-de-ferro-2",
+  "titulo": "Homem de Ferro 2",
+  "ano": 2010,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 2,
+  "en": "Iron Man 2",
+  "tmdb": 10138,
+  "poster": "/vzROjQbgKWMVf2EldXipCcjpuBL.jpg",
+  "backdrop": "/7lmBufEG7P7Y1HClYK3gCxYrkgS.jpg",
+  "sinopse": "Em um mundo ciente da existência do Homem de Ferro, o inventor bilionário Tony Stark sofre pressão de todos os lados para compartilhar sua tecnologia com as forças armadas. Ele resiste para divulgar os segredos de sua inigualável armadura, com medo de que estas informações caiam nas mãos erradas.",
+  "duracao": 124,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/10138-iron-man-2/watch?locale=BR"
+  }
+ },
+ {
+  "id": "thor",
+  "titulo": "Thor",
+  "ano": 2011,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 2,
+  "en": "Thor",
+  "tmdb": 10195,
+  "poster": "/aEV9QmgBqjRTdjsvdCgdK89tavQ.jpg",
+  "backdrop": "/cDJ61O1STtbWNBwefuqVrRe3d7l.jpg",
+  "sinopse": "Como filho de Odin, rei dos deuses nórdicos, Thor logo herdará o trono de Asgard de seu idoso pai. Porém, no dia de sua coroação, Thor reage com brutalidade quando os inimigos dos deuses entram no palácio violando o tratado. Como punição, Odin manda Thor para a Terra. Enquanto seu irmão Loki conspira em Asgard, Thor, agora sem seus poderes, enfrenta sua maior ameaça.",
+  "duracao": 115,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/10195-thor/watch?locale=BR"
+  }
+ },
+ {
+  "id": "x-men-primeira-classe",
+  "titulo": "X-Men: Primeira Classe",
+  "ano": 2011,
+  "tipo": "filme",
+  "franquia": "xmen",
+  "bloco": 2,
+  "en": "X-Men: First Class",
+  "tmdb": 49538,
+  "poster": "/hMVzCXh2vmCMzZS2mM2QvMqQZZs.jpg",
+  "backdrop": "/yhp5Pt4GugkCs5mz63qWz5khHXe.jpg",
+  "sinopse": "No início dos anos 1960, durante o auge da Guerra Fria, um mutante chamado Charles Xavier conhece um mutante chamado Erik Lehnsherr. Apesar de suas origens muito diferentes - Charles cresceu em uma família rica enquanto Erik perdeu seus pais em Auschwitz -, os dois se tornam grandes amigos. Enquanto o mundo oscila à beira de uma guerra nuclear, Charles e Erik unem forças com outros mutantes para salvar a humanidade. No entanto, um acontecimento separa os dois amigos.",
+  "duracao": 131,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/49538-x-men-first-class/watch?locale=BR"
+  }
+ },
+ {
+  "id": "capitao-america-primeiro-vingador",
+  "titulo": "Capitão América: O Primeiro Vingador",
+  "ano": 2011,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 2,
+  "en": "Captain America: The First Avenger",
+  "tmdb": 1771,
+  "poster": "/19wxfSXHhuJBRbbfUweCsfXFhpv.jpg",
+  "backdrop": "/yFuKvT4Vm3sKHdFY4eG6I4ldAnn.jpg",
+  "sinopse": "Durante a Segunda Guerra Mundial, Steve Rogers é um homem doente, do Brooklyn, que se transforma no super soldado Capitão América para ajudar nos esforços de guerra. Rogers deve parar o Caveira Vermelha, o implacável chefe de armas de Adolf Hitler e líder de uma organização que pretende usar um misterioso mecanismo de incalculáveis poderes para dominar o mundo.",
+  "duracao": 124,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/1771-captain-america-the-first-avenger/watch?locale=BR"
+  }
+ },
+ {
+  "id": "os-vingadores",
+  "titulo": "Os Vingadores",
+  "ano": 2012,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 2,
+  "en": "The Avengers",
+  "tmdb": 24428,
+  "poster": "/PtSapjHdDjlVcsqdEo0u7rDE6i.jpg",
+  "backdrop": "/9BBTo63ANSmhC4e6r62OJFuK2GL.jpg",
+  "sinopse": "Loki, o irmão de Thor, ganha acesso ao poder ilimitado do cubo cósmico ao roubá-lo de dentro das instalações da S.H.I.E.L.D. Nick Fury, o diretor desta agência internacional que mantém a paz, logo reúne os únicos super-heróis que serão capazes de defender a Terra de ameaças sem precedentes. Homem de Ferro, Capitão América, Hulk, Thor, Viúva Negra e Gavião Arqueiro formam o time dos sonhos de Fury, mas eles precisam aprender a colocar os egos de lado e agir como um grupo em prol da humanidade.",
+  "duracao": 143,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/24428-the-avengers/watch?locale=BR"
+  }
+ },
+ {
+  "id": "espetacular-homem-aranha",
+  "titulo": "O Espetacular Homem-Aranha",
+  "ano": 2012,
+  "tipo": "filme",
+  "franquia": "sony",
+  "bloco": 2,
+  "en": "The Amazing Spider-Man",
+  "tmdb": 1930,
+  "poster": "/gxSsFBCFuDhVQMCuIDoZcmHOqlY.jpg",
+  "backdrop": "/HVcza6tJtWFrLriuh3Ano4Vt46.jpg",
+  "sinopse": "Peter Parker está tentando saber mais sobre sua origem. Ele encontra uma pasta que pertenceu ao seu pai e quer descobrir por que seus pais desapareceram. Sua busca o leva a Oscorp e ao dr. Curt Connors, que tem como alterego o letal Lagarto.",
+  "duracao": 136,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Claro video",
+     "logo": "/zTJg0WVErBkcJv4S9FkQRUyXjnq.png"
+    },
+    {
+     "nome": "HBO Max",
+     "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
+    },
+    {
+     "nome": "Claro tv+",
+     "logo": "/olzQMHt2SX7iNy8WDMR299hVFcL.png"
+    },
+    {
+     "nome": "HBO Max Amazon Channel",
+     "logo": "/64fLWeSyZ1KQZhIdvTdy4QHeWty.png"
+    },
+    {
+     "nome": "Sony One Amazon Channel",
+     "logo": "/COoISLyfBkZ9Vgr5NbjmnxacSb.png"
+    }
+   ],
+   "aluguel": true,
+   "link": "https://www.themoviedb.org/movie/1930-the-amazing-spider-man/watch?locale=BR"
+  }
+ },
+ {
+  "id": "homem-de-ferro-3",
+  "titulo": "Homem de Ferro 3",
+  "ano": 2013,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 3,
+  "en": "Iron Man 3",
+  "tmdb": 68721,
+  "poster": "/C7MZwRTjvEy7gkWcLJeBGZFE1w.jpg",
+  "backdrop": "/iVped1djsF0tvGkvnHbzsE3ZPTF.jpg",
+  "sinopse": "Depois de um inimigo reduzir o mundo de Tony Stark a destroços, o Homem de Ferro precisa aprender a confiar em seus instintos para proteger aqueles que ama, especialmente sua namorada, e lutar contra seu maior medo: o fracasso.",
+  "duracao": 130,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/68721-iron-man-3/watch?locale=BR"
+  }
+ },
+ {
+  "id": "wolverine-imortal",
+  "titulo": "Wolverine: Imortal",
+  "ano": 2013,
+  "tipo": "filme",
+  "franquia": "xmen",
+  "bloco": 3,
+  "en": "The Wolverine",
+  "tmdb": 76170,
+  "poster": "/qlQ00x9OWU8RdxaV1UtUW8X9PbY.jpg",
+  "backdrop": "/bEAQfLTykGg232kJogBlxRYaRqU.jpg",
+  "sinopse": "Após matar Jean Grey para salvar a humanidade, Logan passou a viver na selva. Deprimido, ele é encontrado em um bar pela jovem Yukio, filha de Yashida, que foi salvo por Logan em Nagasaki na época da bomba atômica. Yashima deseja reencontrar Logan para fazer-lhe uma proposta: transferir seu fator de cura para ele, de forma que Logan possa, enfim, se tornar mortal e levar uma vida como uma pessoa qualquer. Ele recusa o convite, mas acaba infectado por uma mutante imune a venenos de todo tipo.",
+  "duracao": 138,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/76170-the-wolverine/watch?locale=BR"
+  }
+ },
+ {
+  "id": "thor-mundo-sombrio",
+  "titulo": "Thor: O Mundo Sombrio",
+  "ano": 2013,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 3,
+  "en": "Thor: The Dark World",
+  "tmdb": 76338,
+  "poster": "/9qdqXIx2neypuT1kWKCTI2vsO4q.jpg",
+  "backdrop": "/5o88bbqcV5STn56jqOeovaaWbAE.jpg",
+  "sinopse": "Thor precisa contar com a ajuda de seus companheiros e até de seu traiçoeiro irmão Loki em um plano audacioso para salvar o universo. Entretanto, os caminhos de Thor se cruzam com Jane Foster e, dessa vez, a vida dela está realmente em perigo.",
+  "duracao": 112,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/76338-thor-the-dark-world/watch?locale=BR"
+  }
+ },
+ {
+  "id": "capitao-america-soldado-invernal",
+  "titulo": "Capitão América: O Soldado Invernal",
+  "ano": 2014,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 3,
+  "en": "Captain America: The Winter Soldier",
+  "tmdb": 100402,
+  "poster": "/9sTDXtIIfHza1rAbmHU2djyzEXA.jpg",
+  "backdrop": "/1RWLMyC9KcFfcaoViMiJGSSZzzr.jpg",
+  "sinopse": "Após os eventos catastróficos em Nova York com Os Vingadores, Steve Rogers segue tentando se ajustar ao mundo moderno. Porém, quando um colega da agência S.H.I.E.L.D. é atacado, Steve se vê preso em uma rede de intrigas que ameaça colocar o mundo em risco. Em parceria com a Viúva Negra e Falcão, seu novo aliado, o Capitão América tem que enfrentar um misterioso e inesperado inimigo, o Soldado Invernal.",
+  "duracao": 136,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/100402-captain-america-the-winter-soldier/watch?locale=BR"
+  }
+ },
+ {
+  "id": "espetacular-homem-aranha-2",
+  "titulo": "O Espetacular Homem-Aranha 2",
+  "ano": 2014,
+  "tipo": "filme",
+  "franquia": "sony",
+  "bloco": 3,
+  "en": "The Amazing Spider-Man 2",
+  "tmdb": 102382,
+  "poster": "/cyMz4OfmNqpuQ02QQOQCbGxQjwK.jpg",
+  "backdrop": "/k0hlAzTryCYX1O1LyC6P8tAa8s0.jpg",
+  "sinopse": "O jovem Peter Parker está fascinado com as habilidades que adquiriu como Homem-Aranha. Agora, ele precisa lidar com dois problemas: o retorno de um velho amigo, Harry Osborn, e a chegada de um vilão mais forte e poderoso, Electro.",
+  "duracao": 141,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Amazon Prime Video",
+     "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "nome": "Claro video",
+     "logo": "/zTJg0WVErBkcJv4S9FkQRUyXjnq.png"
+    },
+    {
+     "nome": "HBO Max",
+     "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
+    },
+    {
+     "nome": "Claro tv+",
+     "logo": "/olzQMHt2SX7iNy8WDMR299hVFcL.png"
+    },
+    {
+     "nome": "HBO Max Amazon Channel",
+     "logo": "/64fLWeSyZ1KQZhIdvTdy4QHeWty.png"
+    },
+    {
+     "nome": "Sony One Amazon Channel",
+     "logo": "/COoISLyfBkZ9Vgr5NbjmnxacSb.png"
+    },
+    {
+     "nome": "Amazon Prime Video with Ads",
+     "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+    }
+   ],
+   "aluguel": true,
+   "link": "https://www.themoviedb.org/movie/102382-the-amazing-spider-man-2/watch?locale=BR"
+  }
+ },
+ {
+  "id": "x-men-dias-futuro-esquecido",
+  "titulo": "X-Men: Dias de um Futuro Esquecido",
+  "ano": 2014,
+  "tipo": "filme",
+  "franquia": "xmen",
+  "bloco": 3,
+  "en": "X-Men: Days of Future Past",
+  "tmdb": 127585,
+  "poster": "/cAGrjXVQoNyqHgxPoXr68JGqmp0.jpg",
+  "backdrop": "/3czpqXzFy5UcNuD1AubecRLWkwD.jpg",
+  "sinopse": "O Dr. Bolivar Trask acredita que os mutantes são uma ameaça para a humanidade. Ele desenvolve gigantescos robôs chamados Sentinelas, que perseguem impiedosamente os mutantes. Os poucos sobreviventes precisam viver escondidos. Wolverine viaja no tempo para procurar os jovens Xavier e Magneto e impedir que eles sejam caçados e aniquilados no futuro.",
+  "duracao": 149,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/127585-x-men-days-of-future-past/watch?locale=BR"
+  }
+ },
+ {
+  "id": "guardioes-da-galaxia",
+  "titulo": "Guardiões da Galáxia",
+  "ano": 2014,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 3,
+  "en": "Guardians of the Galaxy",
+  "tmdb": 118340,
+  "poster": "/xaY92XMToaSnBuvCui3LHzNGqZB.jpg",
+  "backdrop": "/uLtVbjvS1O7gXL8lUOwsFOH4man.jpg",
+  "sinopse": "Abduzido da Terra quando ainda era criança, Peter Quill fez carreira como saqueador e se auto denominou \"Senhor das Estrelas\". Quando rouba uma esfera, na qual o poderoso vilão Ronan, da raça kree, está interessado, passa a ser procurado por vários caçadores de recompensas. Para escapar do perigo, Quill une forças com quatro personagens fora do sistema: Groot, uma árvore humanóide (Vin Diesel), a sombria e perigosa Gamora, o guaxinim rápido no gatilho Rocket Racoon e o vingativo Drax, o Destruidor. A esfera roubada é capaz de mudar o destino de todo o universo.",
+  "duracao": 121,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/118340-guardians-of-the-galaxy/watch?locale=BR"
+  }
+ },
+ {
+  "id": "demolidor-t1",
+  "titulo": "Demolidor, 1ª temporada",
+  "ano": 2015,
+  "tipo": "serie",
+  "franquia": "netflix",
+  "bloco": 3,
+  "en": "Daredevil",
+  "busca_ano": 2015,
+  "temporada": 1,
+  "tmdb": 61889,
+  "poster": "/pg9F7J2vu0e3JxnJcfVy0u3lzMl.jpg",
+  "backdrop": "/pPALpad1Fh14g7ejyQjqKzlhrBw.jpg",
+  "sinopse": "Matt Murdock ficou cego ainda garoto, mas nada o impede de lutar por justiça: de dia como advogado, de noite como o Demolidor.",
+  "episodios": 13,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/tv/61889-marvel-s-daredevil/watch?locale=BR"
+  }
+ },
+ {
+  "id": "era-de-ultron",
+  "titulo": "Vingadores: Era de Ultron",
+  "ano": 2015,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 3,
+  "en": "Avengers: Age of Ultron",
+  "tmdb": 99861,
+  "poster": "/uvzqTsRmUzk9mJVzX8cMSWMyM5l.jpg",
+  "backdrop": "/kIBK5SKwgqIIuRKhhWrJn3XkbPq.jpg",
+  "sinopse": "Ao tentar proteger o planeta de ameaças, Tony Stark constrói um sistema de inteligência artificial que cuidaria da paz mundial. O projeto acaba dando errado e gera o nascimento do Ultron. Com o destino da Terra em jogo, os Vingadores terão que se unir para mais uma vez salvar a raça humana da extinção.",
+  "duracao": 141,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/99861-avengers-age-of-ultron/watch?locale=BR"
+  }
+ },
+ {
+  "id": "homem-formiga",
+  "titulo": "Homem-Formiga",
+  "ano": 2015,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 3,
+  "en": "Ant-Man",
+  "tmdb": 102899,
+  "poster": "/lsiy4IcnbtChkayPMxLda2fq4xM.jpg",
+  "backdrop": "/1K3JmSNUN8OpjYsCjc0Hy0SYxAb.jpg",
+  "sinopse": "Dr. Hank Pym, o inventor da fórmula/traje que permite o encolhimento, precisa impedir que seu ex-pupilo Darren Cross consiga replicar o feito e vender a tecnologia para uma organização do mal. Depois de sair da cadeia, o trambiqueiro Scott Lang está disposto a reconquistar o respeito da ex-mulher, Maggie e, principalmente, da filha. Com dificuldades de arrumar um emprego honesto, ele aceita praticar um último golpe. O que ele não sabia era que tudo não passava de um plano do Dr. Pym que, depois de anos observando o hábil ladrão, o escolhe para vestir o traje do Homem-Formiga.",
+  "duracao": 115,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/102899-ant-man/watch?locale=BR"
+  }
+ },
+ {
+  "id": "deadpool",
+  "titulo": "Deadpool",
+  "ano": 2016,
+  "tipo": "filme",
+  "franquia": "xmen",
+  "bloco": 3,
+  "en": "Deadpool",
+  "tmdb": 293660,
+  "poster": "/tekExNqal2kcHp8BKiHX5jjxK9J.jpg",
+  "backdrop": "/rFj9IKlL75B2pXhZA60jkNWvxeW.jpg",
+  "sinopse": "Depois de passar por um experimento desonesto que lhe concede um fator de cura acelerado, mas desfigura seu rosto, o ex-agente das Forças Especiais Wade Wilson assume o alter ego de Deadpool. Com suas novas habilidades e um senso de humor sombrio e perverso, Deadpool persegue o homem que quase destruiu sua vida.",
+  "duracao": 107,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/293660-deadpool/watch?locale=BR"
+  }
+ },
+ {
+  "id": "demolidor-t2",
+  "titulo": "Demolidor, 2ª temporada",
+  "ano": 2016,
+  "tipo": "serie",
+  "franquia": "netflix",
+  "bloco": 3,
+  "en": "Daredevil",
+  "busca_ano": 2015,
+  "temporada": 2,
+  "tmdb": 61889,
+  "poster": "/tt37OtTjsrCokPnHx0gqamOYhPo.jpg",
+  "backdrop": "/pPALpad1Fh14g7ejyQjqKzlhrBw.jpg",
+  "sinopse": "O crime e a violência pairam sobre Hell's Kitchen novamente. Dessa vez, o Demolidor precisa escolher entre a cidade e seus amigos.",
+  "episodios": 13,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/tv/61889-marvel-s-daredevil/watch?locale=BR"
+  }
+ },
+ {
+  "id": "guerra-civil",
+  "titulo": "Capitão América: Guerra Civil",
+  "ano": 2016,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 3,
+  "en": "Captain America: Civil War",
+  "tmdb": 271110,
+  "poster": "/dsvUR5aEVSkB1Sro7nT6Khqik71.jpg",
+  "backdrop": "/7FWlcZq3r6525LWOcvO9kNWurN1.jpg",
+  "sinopse": "Depois do ataque de Ultron, os políticos decidem controlar os Vingadores, já que suas ações afetam toda a humanidade. A decisão coloca o Capitão América em rota de colisão com o Homem de Ferro.",
+  "duracao": 137,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/271110-captain-america-civil-war/watch?locale=BR"
+  }
+ },
+ {
+  "id": "x-men-apocalipse",
+  "titulo": "X-Men: Apocalipse",
+  "ano": 2016,
+  "tipo": "filme",
+  "franquia": "xmen",
+  "bloco": 3,
+  "en": "X-Men: Apocalypse",
+  "tmdb": 246655,
+  "poster": "/czKpsvSmpzMoOuuJXGjBHMoH1qq.jpg",
+  "backdrop": "/sTQNRqLbfCXolrb5CizAW1dj528.jpg",
+  "sinopse": "Apocalipse, o primeiro mutante de todos, consegue retornar à vida após milhares de anos. Agora, ele sai à procura de seguidores para dominar o mundo. Caberá aos X-Men se unirem para impedir os planos do vilão e evitar uma catástofre mundial.",
+  "duracao": 144,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/246655-x-men-apocalypse/watch?locale=BR"
+  }
+ },
+ {
+  "id": "doutor-estranho",
+  "titulo": "Doutor Estranho",
+  "ano": 2016,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 3,
+  "en": "Doctor Strange",
+  "tmdb": 284052,
+  "poster": "/pb4clPWRJ5AKlSFu1HrrHdt5uAw.jpg",
+  "backdrop": "/kkoiH8ZWxJ9WSAjOadGtuHUQxbm.jpg",
+  "sinopse": "Após sua carreira ser destruída, um brilhante, porém arrogante, cirurgião ganha uma nova chance em sua vida quando um feiticeiro o treina para se tornar o Mago Supremo.",
+  "duracao": 115,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/284052-doctor-strange/watch?locale=BR"
+  }
+ },
+ {
+  "id": "logan",
+  "titulo": "Logan",
+  "ano": 2017,
+  "tipo": "filme",
+  "franquia": "xmen",
+  "bloco": 4,
+  "en": "Logan",
+  "tmdb": 263115,
+  "poster": "/f0CtZbae9cXj8bkWdCHzUHx5lsR.jpg",
+  "backdrop": "/4DZxWNSAyksN6N3JkvpJ53Yq6zU.jpg",
+  "sinopse": "Em um futuro próximo, um cansado Logan cuida do doente Professor Xavier em um esconderijo na fronteira mexicana. Mas as tentativas de Logan de se esconder do mundo e de seu legado são interrompidas com a chegada de uma jovem mutante, perseguida por forças sombrias.",
+  "duracao": 135,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/263115-logan/watch?locale=BR"
+  }
+ },
+ {
+  "id": "guardioes-da-galaxia-2",
+  "titulo": "Guardiões da Galáxia Vol. 2",
+  "ano": 2017,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 4,
+  "en": "Guardians of the Galaxy Vol. 2",
+  "tmdb": 283995,
+  "poster": "/jGtBLu0JAKf5JxhWgmF68HROzCA.jpg",
+  "backdrop": "/aJn9XeesqsrSLKcHfHP4u5985hn.jpg",
+  "sinopse": "Os Guardiões precisam lutar para manter sua recém descoberta família unida, enquanto descobrem os mistérios sobre o verdadeiro pai de Peter Quill.",
+  "duracao": 136,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/283995-guardians-of-the-galaxy-vol-2/watch?locale=BR"
+  }
+ },
+ {
+  "id": "de-volta-ao-lar",
+  "titulo": "Homem-Aranha: De Volta ao Lar",
+  "ano": 2017,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 4,
+  "en": "Spider-Man: Homecoming",
+  "tmdb": 315635,
+  "poster": "/1nkwRL17cAGO8A1yu3miRBdvOsl.jpg",
+  "backdrop": "/fn4n6uOYcB6Uh89nbNPoU2w80RV.jpg",
+  "sinopse": "Depois de atuar ao lado dos Vingadores, chegou a hora de Peter Parker voltar para casa e para a sua vida, já não mais tão normal.",
+  "duracao": 133,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Claro video",
+     "logo": "/zTJg0WVErBkcJv4S9FkQRUyXjnq.png"
+    },
+    {
+     "nome": "HBO Max",
+     "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
+    },
+    {
+     "nome": "HBO Max Amazon Channel",
+     "logo": "/64fLWeSyZ1KQZhIdvTdy4QHeWty.png"
+    }
+   ],
+   "aluguel": true,
+   "link": "https://www.themoviedb.org/movie/315635-spider-man-homecoming/watch?locale=BR"
+  }
+ },
+ {
+  "id": "os-defensores",
+  "titulo": "Os Defensores",
+  "ano": 2017,
+  "tipo": "serie",
+  "franquia": "netflix",
+  "bloco": 4,
+  "en": "The Defenders",
+  "busca_ano": 2017,
+  "temporada": 1,
+  "tmdb": 62285,
+  "poster": "/shjEMJJuDmEK2jII264eiOOLz7N.jpg",
+  "backdrop": "/ycAWXhAhyaE7g3JBAaierK4LgNg.jpg",
+  "sinopse": "Demolidor, Jessica Jones, Luke Cage e Punho de Ferro unem forças contra inimigos em comum enquanto uma conspiração sinistra ameaça Nova York.",
+  "episodios": 8,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/tv/62285-marvel-s-the-defenders/watch?locale=BR"
+  }
+ },
+ {
+  "id": "thor-ragnarok",
+  "titulo": "Thor: Ragnarok",
+  "ano": 2017,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 4,
+  "en": "Thor: Ragnarok",
+  "tmdb": 284053,
+  "poster": "/2K45Fp6koAVoeeYS6aMb9BeNt4F.jpg",
+  "backdrop": "/vLmHH8jAy8Jq8uBsLucd3592WGh.jpg",
+  "sinopse": "Thor está preso do outro lado do universo. Ele precisa correr contra o tempo para voltar a Asgard e parar Ragnarok, a destruição de seu mundo, que está nas mãos da poderosa e implacável vilã Hela.",
+  "duracao": 131,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/284053-thor-ragnarok/watch?locale=BR"
+  }
+ },
+ {
+  "id": "pantera-negra",
+  "titulo": "Pantera Negra",
+  "ano": 2018,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 4,
+  "en": "Black Panther",
+  "tmdb": 284054,
+  "poster": "/ubXNpxL2ASSzY0f8Hxv08pOsV2L.jpg",
+  "backdrop": "/b6ZJZHUdMEFECvGiDpJjlfUWela.jpg",
+  "sinopse": "O príncipe T'Challa retorna a Wakanda para ser coroado rei. Assumindo o manto de Pantera Negra, ele vai à caça de um vilão que roubou um precioso metal de seu país.",
+  "duracao": 134,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/284054-black-panther/watch?locale=BR"
+  }
+ },
+ {
+  "id": "guerra-infinita",
+  "titulo": "Vingadores: Guerra Infinita",
+  "ano": 2018,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 4,
+  "en": "Avengers: Infinity War",
+  "tmdb": 299536,
+  "poster": "/A4kvp7vY1BDLrrQIagRCffLKj1t.jpg",
+  "backdrop": "/mDfJG3LC3Dqb67AZ52x3Z0jU0uB.jpg",
+  "sinopse": "Homem de Ferro, Thor, Hulk e os Vingadores se unem para combater seu inimigo mais poderoso, o maligno Thanos. Em uma missão para coletar todas as seis pedras infinitas, Thanos planeja usá-las para infligir sua vontade maléfica sobre a realidade.",
+  "duracao": 148,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/299536-avengers-infinity-war/watch?locale=BR"
+  }
+ },
+ {
+  "id": "deadpool-2",
+  "titulo": "Deadpool 2",
+  "ano": 2018,
+  "tipo": "filme",
+  "franquia": "xmen",
+  "bloco": 4,
+  "en": "Deadpool 2",
+  "tmdb": 383498,
+  "poster": "/rDRIx1J63HVXUkjWTf4RUiNOa3D.jpg",
+  "backdrop": "/3P52oz9HPQWxcwHOwxtyrVV1LKi.jpg",
+  "sinopse": "Quando o super soldado Cable chega em uma missão para assassinar o jovem mutante Russel, o mercenário Deadpool precisa aprender o que é ser herói de verdade para salvá-lo. Para isso, ele recruta seu velho amigo Colossus e forma o novo grupo X-Force, sempre com o apoio do fiel escudeiro Dopinder.",
+  "duracao": 134,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/383498-deadpool-2/watch?locale=BR"
+  }
+ },
+ {
+  "id": "homem-formiga-e-a-vespa",
+  "titulo": "Homem-Formiga e a Vespa",
+  "ano": 2018,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 4,
+  "en": "Ant-Man and the Wasp",
+  "tmdb": 363088,
+  "poster": "/5BKRuGVxx8qsB7WGSJ0oWRCHsgN.jpg",
+  "backdrop": "/iYdgEUE2W2aJkgqfSjf1x3gFfuV.jpg",
+  "sinopse": "Scott Lang lida com as consequências de suas escolhas tanto como super-herói quanto como pai. Enquanto tenta reequilibrar sua vida com suas responsabilidades como o Homem-Formiga, ele é confrontado por Hope van Dyne e Dr. Hank Pym com uma nova missão urgente. Scott deve mais uma vez vestir o uniforme e aprender a lutar ao lado da Vespa, trabalhando em conjunto para descobrir segredos do passado.",
+  "duracao": 118,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/363088-ant-man-and-the-wasp/watch?locale=BR"
+  }
+ },
+ {
+  "id": "venom",
+  "titulo": "Venom",
+  "ano": 2018,
+  "tipo": "filme",
+  "franquia": "sony",
+  "bloco": 4,
+  "en": "Venom",
+  "tmdb": 335983,
+  "poster": "/e4SJKPH8muigUI8VcZtkqWJvEz1.jpg",
+  "backdrop": "/VuukZLgaCrho2Ar8Scl9HtV3yD.jpg",
+  "sinopse": "O jornalista Eddie Brock desenvolve força e poder sobre-humanos quando seu corpo se funde com o alienígena Venom. Dominado pela raiva, Venom tenta controlar as novas e perigosas habilidades de Eddie.",
+  "duracao": 112,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "HBO Max",
+     "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
+    },
+    {
+     "nome": "HBO Max Amazon Channel",
+     "logo": "/64fLWeSyZ1KQZhIdvTdy4QHeWty.png"
+    }
+   ],
+   "aluguel": true,
+   "link": "https://www.themoviedb.org/movie/335983-venom/watch?locale=BR"
+  }
+ },
+ {
+  "id": "demolidor-t3",
+  "titulo": "Demolidor, 3ª temporada",
+  "ano": 2018,
+  "tipo": "serie",
+  "franquia": "netflix",
+  "bloco": 4,
+  "en": "Daredevil",
+  "busca_ano": 2015,
+  "temporada": 3,
+  "tmdb": 61889,
+  "poster": "/x7zUHG5cko4ZXQO2209Qc2aoyrc.jpg",
+  "backdrop": "/pPALpad1Fh14g7ejyQjqKzlhrBw.jpg",
+  "sinopse": "Com Wilson Fisk recuperando poder, Matt Murdock ressurge do caos em que se transformou sua vida preparado para fazer o que for preciso para proteger Hell's Kitchen.",
+  "episodios": 13,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/tv/61889-marvel-s-daredevil/watch?locale=BR"
+  }
+ },
+ {
+  "id": "capita-marvel",
+  "titulo": "Capitã Marvel",
+  "ano": 2019,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 4,
+  "en": "Captain Marvel",
+  "tmdb": 299537,
+  "poster": "/n3BisLdTMceUWcdP1ooP5VwN9JF.jpg",
+  "backdrop": "/qAzYK4YPSWDc7aa4R43LcwRIAyb.jpg",
+  "sinopse": "Capitã Marvel, parte do exército de elite dos Kree, uma raça alienígena, encontra-se no meio de uma batalha entre seu povo e os Skrulls. Ao tentar impedir uma invasão de larga escala na Terra, em 1995, ela tem memórias recorrentes de uma outra vida, como Carol Danvers, agente da Força Aérea norte-americana. Com a ajuda de Nick Fury, Capitã Marvel precisa descobrir os segredos de seu passado e pôr um fim ao conflito intergalático com os Skrulls.",
+  "duracao": 124,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/299537-captain-marvel/watch?locale=BR"
+  }
+ },
+ {
+  "id": "ultimato",
+  "titulo": "Vingadores: Ultimato",
+  "ano": 2019,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 4,
+  "en": "Avengers: Endgame",
+  "tmdb": 299534,
+  "poster": "/q6725aR8Zs4IwGMXzZT8aC8lh41.jpg",
+  "backdrop": "/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
+  "sinopse": "Após os eventos devastadores de \"Vingadores: Guerra Infinita\", o universo está em ruínas devido aos esforços do Titã Louco, Thanos. Com a ajuda de aliados remanescentes, os Vingadores devem se reunir mais uma vez a fim de desfazer as ações de Thanos e restaurar a ordem no universo de uma vez por todas, não importando as consequências.",
+  "duracao": 181,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/299534-avengers-endgame/watch?locale=BR"
+  }
+ },
+ {
+  "id": "fenix-negra",
+  "titulo": "X-Men: Fênix Negra",
+  "ano": 2019,
+  "tipo": "filme",
+  "franquia": "xmen",
+  "bloco": 4,
+  "en": "Dark Phoenix",
+  "tmdb": 320288,
+  "poster": "/w4mvEKtjawXdYaq1bORuodLX6ti.jpg",
+  "backdrop": "/j9ZV0UOagjQ4seR8Hd5N6JfwdTP.jpg",
+  "sinopse": "Ambientado em 1992, Charles Xavier está lidando com o fato dos mutantes serem considerados heróis nacionais. Com o orgulho a flor da pele, ele envia sua equipe para perigosas missões, mas a primeira tarefa dos X-Men no espaço gera uma explosão solar, que acende uma força malévola e faminta por poder dentro de Jean Grey.",
+  "duracao": 114,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": true,
+   "link": "https://www.themoviedb.org/movie/320288-dark-phoenix/watch?locale=BR"
+  }
+ },
+ {
+  "id": "longe-de-casa",
+  "titulo": "Homem-Aranha: Longe de Casa",
+  "ano": 2019,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 4,
+  "en": "Spider-Man: Far From Home",
+  "tmdb": 429617,
+  "poster": "/tX0o4AdHpidgniTWwfzK0dNTKrc.jpg",
+  "backdrop": "/vamhMTvh9m9zFHDoR0v1nRtf6T4.jpg",
+  "sinopse": "Peter Parker está em uma viagem de duas semanas pela Europa, ao lado de seus amigos de colégio, quando é surpreendido pela visita de Nick Fury. Convocado para mais uma missão heroica, ele precisa enfrentar vários vilões que surgem em cidades-símbolo do continente, como Londres, Paris e Veneza, e também a aparição do enigmático Mysterio.",
+  "duracao": 130,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Netflix",
+     "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
+    },
+    {
+     "nome": "Amazon Prime Video",
+     "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "nome": "Claro video",
+     "logo": "/zTJg0WVErBkcJv4S9FkQRUyXjnq.png"
+    },
+    {
+     "nome": "Claro tv+",
+     "logo": "/olzQMHt2SX7iNy8WDMR299hVFcL.png"
+    },
+    {
+     "nome": "Netflix Standard with Ads",
+     "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
+    },
+    {
+     "nome": "Amazon Prime Video with Ads",
+     "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+    },
+    {
+     "nome": "Universal+ Amazon Channel",
+     "logo": "/j3Q750FwRyIejO5MrNu25Kia57.png"
+    }
+   ],
+   "aluguel": true,
+   "link": "https://www.themoviedb.org/movie/429617-spider-man-far-from-home/watch?locale=BR"
+  }
+ },
+ {
+  "id": "novos-mutantes",
+  "titulo": "Os Novos Mutantes",
+  "ano": 2020,
+  "tipo": "filme",
+  "franquia": "xmen",
+  "bloco": 5,
+  "en": "The New Mutants",
+  "tmdb": 340102,
+  "poster": "/aTGaI5ahE694f8vNMiYc5bEK06H.jpg",
+  "backdrop": "/1MoeNacOltBWojkStjhT3svBTOK.jpg",
+  "sinopse": "Cinco jovens mutantes descobrem o alcance de seus poderes e lidam com traumas do passado enquanto são mantidos presos contra a vontade num sinistro hospital.",
+  "duracao": 90,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/340102-the-new-mutants/watch?locale=BR"
+  }
+ },
+ {
+  "id": "wandavision",
+  "titulo": "WandaVision",
+  "ano": 2021,
+  "tipo": "serie",
+  "franquia": "mcu",
+  "bloco": 5,
+  "en": "WandaVision",
+  "busca_ano": 2021,
+  "temporada": 1,
+  "tmdb": 85271,
+  "poster": "/ocbudBxA2Tpn3bWNwv2Tk8LGeAy.jpg",
+  "backdrop": "/cq62fLH3vwOmiaLKMqkDI86tPtH.jpg",
+  "sinopse": "Wanda Maximoff  e Visão, um casal de super-heróis com uma vida perfeita, que começa a suspeitar que nem tudo é o que parece.",
+  "episodios": 9,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/tv/85271-wandavision/watch?locale=BR"
+  }
+ },
+ {
+  "id": "falcao-soldado-invernal",
+  "titulo": "Falcão e o Soldado Invernal",
+  "ano": 2021,
+  "tipo": "serie",
+  "franquia": "mcu",
+  "bloco": 5,
+  "en": "The Falcon and the Winter Soldier",
+  "busca_ano": 2021,
+  "temporada": 1,
+  "tmdb": 88396,
+  "poster": "/w8Hi3GI4q1oR6EImrDWrAQFn8Ha.jpg",
+  "backdrop": "/aTjbqMONy77fHJrIYu14g1F0d5h.jpg",
+  "sinopse": "Após os eventos de \"Vingadores: Ultimato\", Sam Wilson/Falcão e Bucky Barnes/Soldado Invernal se unem em uma aventura que testa suas habilidades - e a paciência.",
+  "episodios": 6,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/tv/88396-the-falcon-and-the-winter-soldier/watch?locale=BR"
+  }
+ },
+ {
+  "id": "loki-t1",
+  "titulo": "Loki, 1ª temporada",
+  "ano": 2021,
+  "tipo": "serie",
+  "franquia": "mcu",
+  "bloco": 5,
+  "en": "Loki",
+  "busca_ano": 2021,
+  "temporada": 1,
+  "tmdb": 84958,
+  "poster": "/8uVqe9ThcuYVNdh4O0kuijIWMLL.jpg",
+  "backdrop": "/q3jHCb4dMfYF6ojikKuHd6LscxC.jpg",
+  "sinopse": "Loki, o Deus da Trapaça, sai da sombra de seu irmão para embarcar em uma aventura que ocorre após os eventos de \"Vingadores\": Ultimato\".",
+  "episodios": 6,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/tv/84958-loki/watch?locale=BR"
+  }
+ },
+ {
+  "id": "viuva-negra",
+  "titulo": "Viúva Negra",
+  "ano": 2021,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 5,
+  "en": "Black Widow",
+  "tmdb": 497698,
+  "poster": "/lrJ9QI2HMbO8N2S2r2v7fjtou5c.jpg",
+  "backdrop": "/keIxh0wPr2Ymj0Btjh4gW7JJ89e.jpg",
+  "sinopse": "Natasha Romanoff, também conhecida como Viúva Negra, confronta o lado mais sombrio de sua história quando surge uma perigosa conspiração ligada ao seu passado. Perseguida por uma força implacável disposta a tudo para destruí-la, Natasha precisa agora lidar com seu passado como espiã e com as relações que deixou para trás muito antes de se tornar uma Vingadora.",
+  "duracao": 135,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/497698-black-widow/watch?locale=BR"
+  }
+ },
+ {
+  "id": "what-if-t1",
+  "titulo": "What If...?, 1ª temporada",
+  "ano": 2021,
+  "tipo": "serie",
+  "franquia": "mcu",
+  "bloco": 5,
+  "en": "What If...?",
+  "busca_ano": 2021,
+  "temporada": 1,
+  "tmdb": 91363,
+  "poster": "/e7n55C4027aRPHNmjE8XIk8nKvZ.jpg",
+  "backdrop": "/jnzoh5qoxRLFRIQAxnl6D3RStPC.jpg",
+  "sinopse": "\"What If…?\" reinventa os acontecimentos do UCM, mudando a história de forma surpreendente.",
+  "episodios": 9,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/tv/91363-what-if/watch?locale=BR"
+  }
+ },
+ {
+  "id": "shang-chi",
+  "titulo": "Shang-Chi e a Lenda dos Dez Anéis",
+  "ano": 2021,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 5,
+  "en": "Shang-Chi and the Legend of the Ten Rings",
+  "tmdb": 566525,
+  "poster": "/d3wNegI8XJF8Kto6KhlqPicBRAp.jpg",
+  "backdrop": "/r7K6Xt0RX4Mw0cAbZVw5cyb1Tux.jpg",
+  "sinopse": "Shang-Chi precisa confrontar o passado que pensou ter deixado para trás. Ao mesmo tempo, ele é envolvido em uma teia de mistérios da organização conhecida como Dez Anéis.",
+  "duracao": 132,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/566525-shang-chi-and-the-legend-of-the-ten-rings/watch?locale=BR"
+  }
+ },
+ {
+  "id": "venom-carnificina",
+  "titulo": "Venom: Tempo de Carnificina",
+  "ano": 2021,
+  "tipo": "filme",
+  "franquia": "sony",
+  "bloco": 5,
+  "en": "Venom: Let There Be Carnage",
+  "tmdb": 580489,
+  "poster": "/h5UzYZquMwO9FVn15R2eK2itmHu.jpg",
+  "backdrop": "/eENEf62tMXbhyVvdcXlnQz2wcuT.jpg",
+  "sinopse": "Em busca de seu próximo furo de reportagem, o jornalista Eddie Brock consegue uma entrevista exclusiva com Cletus Kasady, um assassino no corredor da morte, que descobre o segredo de Eddie e se torna o hospedeiro de Carnificina, um simbionte aterrorizante e ameaçador. Eddie e Venom precisam superar sua relação atribulada e trabalhar em conjunto para derrotar Carnificina.",
+  "duracao": 97,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Amazon Prime Video",
+     "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "nome": "Claro tv+",
+     "logo": "/olzQMHt2SX7iNy8WDMR299hVFcL.png"
+    },
+    {
+     "nome": "Amazon Prime Video with Ads",
+     "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+    }
+   ],
+   "aluguel": true,
+   "link": "https://www.themoviedb.org/movie/580489-venom-let-there-be-carnage/watch?locale=BR"
+  }
+ },
+ {
+  "id": "eternos",
+  "titulo": "Eternos",
+  "ano": 2021,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 5,
+  "en": "Eternals",
+  "tmdb": 524434,
+  "poster": "/2IgZIYa8iTQuLNIcVERwXmh8pUj.jpg",
+  "backdrop": "/c6H7Z4u73ir3cIoCteuhJh7UCAR.jpg",
+  "sinopse": "Após os eventos de \"Vingadores: Ultimato\", os Eternos, uma raça alienígena imortal criada pelos Celestiais que vivem em segredo na Terra há mais de 7000 anos, se reúnem após uma tragédia inesperada para proteger a humanidade de seus colegas malignos: os Deviantes.",
+  "duracao": 157,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/524434-eternals/watch?locale=BR"
+  }
+ },
+ {
+  "id": "gaviao-arqueiro",
+  "titulo": "Gavião Arqueiro",
+  "ano": 2021,
+  "tipo": "serie",
+  "franquia": "mcu",
+  "bloco": 5,
+  "en": "Hawkeye",
+  "busca_ano": 2021,
+  "temporada": 1,
+  "tmdb": 88329,
+  "poster": "/62qfVDg4VK3kqZFxrRztPqSbal4.jpg",
+  "backdrop": "/uHESULlKh7VSc0MRcqfyIf9Alk4.jpg",
+  "sinopse": "O ex-vingador Clint Barton tem uma missão aparentemente simples: voltar para sua família no Natal. Será possível? Talvez com a ajuda de Kate Bishop, uma arqueira de 22 anos que sonha em se tornar uma super-heroína. Os dois são forçados a trabalhar juntos quando uma presença do passado de Barton ameaça descarrilar muito mais do que o espírito festivo.",
+  "episodios": 6,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/tv/88329-hawkeye/watch?locale=BR"
+  }
+ },
+ {
+  "id": "sem-volta-para-casa",
+  "titulo": "Homem-Aranha: Sem Volta para Casa",
+  "ano": 2021,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 5,
+  "en": "Spider-Man: No Way Home",
+  "tmdb": 634649,
+  "poster": "/xaKydnMw6wR1MBAjS5seGPVusbs.jpg",
+  "backdrop": "/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg",
+  "sinopse": "Peter Parker é desmascarado e não consegue mais separar sua vida normal dos grandes riscos de ser um super-herói. Quando ele pede ajuda ao Doutor Estranho, os riscos se tornam ainda mais perigosos, e o forçam a descobrir o que realmente significa ser o Homem-Aranha...",
+  "duracao": 149,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Universal+ Amazon Channel",
+     "logo": "/j3Q750FwRyIejO5MrNu25Kia57.png"
+    }
+   ],
+   "aluguel": true,
+   "link": "https://www.themoviedb.org/movie/634649-spider-man-no-way-home/watch?locale=BR"
+  }
+ },
+ {
+  "id": "morbius",
+  "titulo": "Morbius",
+  "ano": 2022,
+  "tipo": "filme",
+  "franquia": "sony",
+  "bloco": 5,
+  "en": "Morbius",
+  "tmdb": 526896,
+  "poster": "/Av8Z2jZhEm1FLkFzMThzz9hndJF.jpg",
+  "backdrop": "/jzWT0zd8U77fqWg5WgUfYaMzSFz.jpg",
+  "sinopse": "Gravemente doente com um raro distúrbio sanguíneo e determinado a salvar outros sofrendo o mesmo destino, o Dr. Morbius tenta uma aposta desesperada. O que primeiramente parece ser um sucesso radical, libera uma escuridão dentro dele e transforma esse médico em um caçador.",
+  "duracao": 105,
+  "onde": {
+   "streaming": [],
+   "aluguel": true,
+   "link": "https://www.themoviedb.org/movie/526896-morbius/watch?locale=BR"
+  }
+ },
+ {
+  "id": "multiverso-da-loucura",
+  "titulo": "Doutor Estranho no Multiverso da Loucura",
+  "ano": 2022,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 5,
+  "en": "Doctor Strange in the Multiverse of Madness",
+  "tmdb": 453395,
+  "poster": "/7pLIVfovuIf2KQOOvMsKx3Lanrg.jpg",
+  "backdrop": "/lv3TXqhpaIxkclIHbhN2MRMOemQ.jpg",
+  "sinopse": "Doutor Estranho, com a ajuda de aliados místicos antigos e novos, atravessa as perigosas realidades alternativas e alucinantes do Multiverso para enfrentar um novo adversário misterioso.",
+  "duracao": 126,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/453395-doctor-strange-in-the-multiverse-of-madness/watch?locale=BR"
+  }
+ },
+ {
+  "id": "ms-marvel",
+  "titulo": "Ms. Marvel",
+  "ano": 2022,
+  "tipo": "serie",
+  "franquia": "mcu",
+  "bloco": 5,
+  "en": "Ms. Marvel",
+  "busca_ano": 2022,
+  "temporada": 1,
+  "tmdb": 92782,
+  "poster": "/4qoFtoPvFGjlIXYfFVNKhOwZ6zD.jpg",
+  "backdrop": "/mfcLUWASJghU8MTNK38eYktfE83.jpg",
+  "sinopse": "Kamala Khan é uma adolescente muçulmana de Jersey City. Ela adora jogar videogames e escrever fanfictions, além de ser fã de super-heróis e ter uma imaginação sem limites – especialmente quando se trata da Capitã Marvel. Kamala sente que não se encaixa na escola e, às vezes, nem mesmo em casa. Mas um dia ela descobre que tem superpoderes como os heróis que sempre admirou... e a vida fica bem melhor com superpoderes, não é?",
+  "episodios": 6,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/tv/92782-ms-marvel/watch?locale=BR"
+  }
+ },
+ {
+  "id": "amor-e-trovao",
+  "titulo": "Thor: Amor e Trovão",
+  "ano": 2022,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 5,
+  "en": "Thor: Love and Thunder",
+  "tmdb": 616037,
+  "poster": "/8gdBMIYwPPxp3b9FjY9yCxme5Rs.jpg",
+  "backdrop": "/jsoz1HlxczSuTx0mDl2h0lxy36l.jpg",
+  "sinopse": "Thor parte em uma jornada de autodescoberta, diferente de tudo que ele já enfrentou. Mas seus esforços são interrompidos por um assassino galáctico conhecido como Gorr, o Carniceiro dos Deuses, que busca a extinção dos deuses. Para combater esta ameaça, Thor pede a ajuda da Rei Valquíria, Korg e da ex-namorada Jane Foster, que, para a surpresa de Thor, inexplicavelmente empunha seu mágico martelo, Mjolnir, como a Poderosa Thor. Juntos, eles embarcam em uma angustiante aventura cósmica para descobrir o mistério da vingança do Carniceiro dos Deuses e detê-lo antes que seja tarde demais.",
+  "duracao": 119,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/616037-thor-love-and-thunder/watch?locale=BR"
+  }
+ },
+ {
+  "id": "wakanda-para-sempre",
+  "titulo": "Pantera Negra: Wakanda para Sempre",
+  "ano": 2022,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 5,
+  "en": "Black Panther: Wakanda Forever",
+  "tmdb": 505642,
+  "poster": "/cryEN3sWlgB2wTzcUNVtDGI8bkM.jpg",
+  "backdrop": "/83H0C66AcvkwpG2738VCTHMY9uv.jpg",
+  "sinopse": "A rainha Ramonda, Shuri, M'Baku, Okoye e as poderosas Dora Milaje lutam para proteger sua nação após a morte do rei T'Challa. Com a ajuda da Cão de Guerra Nakia e de Everett Ross, eles tentam encontrar um novo caminho para Wakanda.",
+  "duracao": 162,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=BR"
+  }
+ },
+ {
+  "id": "quantumania",
+  "titulo": "Homem-Formiga e a Vespa: Quantumania",
+  "ano": 2023,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 6,
+  "en": "Ant-Man and the Wasp: Quantumania",
+  "tmdb": 640146,
+  "poster": "/qZDafbofrZn46MmDwJS8fCSCe6l.jpg",
+  "backdrop": "/m8JTwHFwX7I7JY5fPe4SjqejWag.jpg",
+  "sinopse": "Scott Lang e Hope van Dyne em suas jornadas como super-heróis. Scott e sua família são puxados para o Reino Quântico, onde eles precisarão enfrentar um novo e terrível vilão: Kang, o Conquistador e M.O.D.O.K..",
+  "duracao": 125,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/640146-ant-man-and-the-wasp-quantumania/watch?locale=BR"
+  }
+ },
+ {
+  "id": "guardioes-da-galaxia-3",
+  "titulo": "Guardiões da Galáxia Vol. 3",
+  "ano": 2023,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 6,
+  "en": "Guardians of the Galaxy Vol. 3",
+  "tmdb": 447365,
+  "poster": "/4yycSPnchdNAZirGkmCYQwTd3cr.jpg",
+  "backdrop": "/5YZbUmjbMa3ClvSW1Wj3D6XGolb.jpg",
+  "sinopse": "Peter Quill, que ainda está se recuperando da perda de Gamora, tem que reunir a sua equipe para defender o universo e proteger um dos seus. Uma missão que, se não for concluída com sucesso, pode levar ao fim dos Guardiões como os conhecemos.",
+  "duracao": 150,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/447365-guardians-of-the-galaxy-vol-3/watch?locale=BR"
+  }
+ },
+ {
+  "id": "loki-t2",
+  "titulo": "Loki, 2ª temporada",
+  "ano": 2023,
+  "tipo": "serie",
+  "franquia": "mcu",
+  "bloco": 6,
+  "en": "Loki",
+  "busca_ano": 2021,
+  "temporada": 2,
+  "tmdb": 84958,
+  "poster": "/59NBe1f8t1zaR7Wbi92qZDUtIDd.jpg",
+  "backdrop": "/q3jHCb4dMfYF6ojikKuHd6LscxC.jpg",
+  "sinopse": "Após a primeira temporada, Loki se vê em uma batalha pela alma da Time Variance Authority. Junto com Mobius, B-15 e uma equipe de personagens novos e antigos, Loki navega por um multiverso em constante expansão e cada vez mais perigoso em busca de Sylvie, Renslayer, Srta. Minutos e a verdade sobre o que significa ter livre arbítrio e um propósito glorioso.",
+  "episodios": 6,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/tv/84958-loki/watch?locale=BR"
+  }
+ },
+ {
+  "id": "as-marvels",
+  "titulo": "As Marvels",
+  "ano": 2023,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 6,
+  "en": "The Marvels",
+  "tmdb": 609681,
+  "poster": "/wpp5KIwjtrKoWj5H0TSsJdqsDx7.jpg",
+  "backdrop": "/feSiISwgEpVzR1v3zv2n2AU4ANJ.jpg",
+  "sinopse": "Quando suas obrigações a levam a uma fenda espacial anômala ligada a um revolucionário Kree, os poderes de Carol Danvers, a Capitã Marvel, se entrelaçam aos de Kamala Khan, a Ms. Marvel, e aos da sobrinha de Carol, astronauta da S.A.B.E.R., Capitã Monica Rambeau. Juntas, esse trio improvável deve ser unir para salvar o universo como \"As Marvels\".",
+  "duracao": 156,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/609681-the-marvels/watch?locale=BR"
+  }
+ },
+ {
+  "id": "what-if-t2",
+  "titulo": "What If...?, 2ª temporada",
+  "ano": 2023,
+  "tipo": "serie",
+  "franquia": "mcu",
+  "bloco": 6,
+  "en": "What If...?",
+  "busca_ano": 2021,
+  "temporada": 2,
+  "tmdb": 91363,
+  "poster": "/4POD4lHnIIVO0gqH1wzBPz1vjK8.jpg",
+  "backdrop": "/jnzoh5qoxRLFRIQAxnl6D3RStPC.jpg",
+  "sinopse": "\"What If…?\" reinventa os acontecimentos do UCM, mudando a história de forma surpreendente.",
+  "episodios": 9,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/tv/91363-what-if/watch?locale=BR"
+  }
+ },
+ {
+  "id": "madame-teia",
+  "titulo": "Madame Teia",
+  "ano": 2024,
+  "tipo": "filme",
+  "franquia": "sony",
+  "bloco": 6,
+  "en": "Madame Web",
+  "tmdb": 634492,
+  "poster": "/zWEm5oy2tE9ku1KSNM089FmZJ2p.jpg",
+  "backdrop": "/pwGmXVKUgKN13psUjlhC9zBcq1o.jpg",
+  "sinopse": "Depois de sobreviver a um terrível acidente, a paramédica Cassandra Webb começa a desenvolver habilidades de clarividência. Forçada a enfrentar revelações sobre seu passado, ela estabelece um relacionamento com três jovens destinadas a futuros poderosos... se todas conseguirem sobreviver a um presente mortal.",
+  "duracao": 111,
+  "onde": {
+   "streaming": [],
+   "aluguel": true,
+   "link": "https://www.themoviedb.org/movie/634492-madame-web/watch?locale=BR"
+  }
+ },
+ {
+  "id": "deadpool-wolverine",
+  "titulo": "Deadpool & Wolverine",
+  "ano": 2024,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 6,
+  "en": "Deadpool & Wolverine",
+  "tmdb": 533535,
+  "poster": "/cJFqqiDYprqExaXatu4AaoMzDG2.jpg",
+  "backdrop": "/by8z9Fe8y7p4jo2YlW2SZDnptyT.jpg",
+  "sinopse": "Um apático Wade Wilson trabalha duro na vida civil. Seus dias como mercenário moralmente flexível, Deadpool, ficaram para trás. Quando seu planeta enfrenta uma ameaça, Wade deve relutantemente vestir-se novamente com um ainda mais relutante... relutante? Mais relutante? Ele deve convencer um Wolverine relutante em... Porra. As sinopses são tão estúpidas.",
+  "duracao": 128,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/533535-deadpool-wolverine/watch?locale=BR"
+  }
+ },
+ {
+  "id": "venom-ultima-rodada",
+  "titulo": "Venom: A Última Rodada",
+  "ano": 2024,
+  "tipo": "filme",
+  "franquia": "sony",
+  "bloco": 6,
+  "en": "Venom: The Last Dance",
+  "tmdb": 912649,
+  "poster": "/eZIIPjL7oGqfmF7Gw5ZnbDjH6yu.jpg",
+  "backdrop": "/3V4kLQg0kSqPLctI5ziYWabAZYF.jpg",
+  "sinopse": "Eddie e Venom estão fugindo. Perseguidos pelos dois mundos, a dupla é forçada a tomar uma decisão devastadora que vai fechar as cortinas da última rodada de Venom e Eddie.",
+  "duracao": 110,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Amazon Prime Video",
+     "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "nome": "Amazon Prime Video with Ads",
+     "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+    }
+   ],
+   "aluguel": true,
+   "link": "https://www.themoviedb.org/movie/912649-venom-the-last-dance/watch?locale=BR"
+  }
+ },
+ {
+  "id": "kraven",
+  "titulo": "Kraven, o Caçador",
+  "ano": 2024,
+  "tipo": "filme",
+  "franquia": "sony",
+  "bloco": 6,
+  "en": "Kraven the Hunter",
+  "tmdb": 539972,
+  "poster": "/pWvQsP9o1MQ4vQNjpL9QeYFXKOs.jpg",
+  "backdrop": "/bGGjyPqtNc8hhGkPo8W8D8t90bW.jpg",
+  "sinopse": "Sergei Kravinoff é um grande caçador, que toma um soro mágico que lhe dá habilidades sobre-humanas e uma vida mais longa.",
+  "duracao": 127,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Amazon Prime Video",
+     "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+    },
+    {
+     "nome": "Amazon Prime Video with Ads",
+     "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+    }
+   ],
+   "aluguel": true,
+   "link": "https://www.themoviedb.org/movie/539972-kraven-the-hunter/watch?locale=BR"
+  }
+ },
+ {
+  "id": "what-if-t3",
+  "titulo": "What If...?, 3ª temporada",
+  "ano": 2024,
+  "tipo": "serie",
+  "franquia": "mcu",
+  "bloco": 6,
+  "en": "What If...?",
+  "busca_ano": 2021,
+  "temporada": 3,
+  "tmdb": 91363,
+  "poster": "/rums9MaADaA4evOisBsPJ023lnT.jpg",
+  "backdrop": "/jnzoh5qoxRLFRIQAxnl6D3RStPC.jpg",
+  "sinopse": "\"What If…?\" reinventa os acontecimentos do UCM, mudando a história de forma surpreendente.",
+  "episodios": 8,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/tv/91363-what-if/watch?locale=BR"
+  }
+ },
+ {
+  "id": "admiravel-mundo-novo",
+  "titulo": "Capitão América: Admirável Mundo Novo",
+  "ano": 2025,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 6,
+  "en": "Captain America: Brave New World",
+  "tmdb": 822119,
+  "poster": "/5nbSgP8f5LMCI0PwVRRaHJaUmR3.jpg",
+  "backdrop": "/ce3prrjh9ZehEl5JinNqr4jIeaB.jpg",
+  "sinopse": "Após se encontrar com o recém-eleito presidente dos EUA, Thaddeus Ross, Sam se vê no meio de um incidente internacional. Ele deve descobrir o motivo por trás de uma conspiração global nefasta antes que o verdadeiro gênio faça o mundo inteiro ser dominado pelo vermelho.",
+  "duracao": 119,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/822119-captain-america-brave-new-world/watch?locale=BR"
+  }
+ },
+ {
+  "id": "demolidor-renascido-t1",
+  "titulo": "Demolidor: Renascido, 1ª temporada",
+  "ano": 2025,
+  "tipo": "serie",
+  "franquia": "mcu",
+  "bloco": 6,
+  "en": "Daredevil: Born Again",
+  "busca_ano": 2025,
+  "temporada": 1,
+  "tmdb": 202555,
+  "poster": "/q4ZPou6KRFJZQqLUkISl6Dlagpz.jpg",
+  "backdrop": "/m291MEBjhuRqb0nh9ojnm9gzScq.jpg",
+  "sinopse": "Faz um ano que Matt Murdock se aposentou do combate ao crime como Demolidor. Wilson Fisk foi eleito prefeito de Nova York após uma campanha com uma plataforma anti-vigilantes. O Rei do Crime pode forçar o Demolidor a sair da aposentadoria.",
+  "episodios": 9,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/tv/202555-daredevil-born-again/watch?locale=BR"
+  }
+ },
+ {
+  "id": "thunderbolts",
+  "titulo": "Thunderbolts*",
+  "ano": 2025,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 6,
+  "en": "Thunderbolts*",
+  "tmdb": 986056,
+  "poster": "/zkysYSX51ddSPQuiDTjkGCS6vyh.jpg",
+  "backdrop": "/rthMuZfFv4fqEU4JVbgSW9wQ8rs.jpg",
+  "sinopse": "Depois de se verem presos em uma armadilha mortal, uma equipe não convencional de sete anti-heróis deve embarcar em uma missão perigosa que os forçará a confrontar os cantos mais sombrios de seus passados.",
+  "duracao": 126,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/986056-thunderbolts/watch?locale=BR"
+  }
+ },
+ {
+  "id": "quarteto-fantastico",
+  "titulo": "Quarteto Fantástico: Primeiros Passos",
+  "ano": 2025,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 6,
+  "en": "The Fantastic Four: First Steps",
+  "tmdb": 617126,
+  "poster": "/8F2vIxWycANHW763lnx2hJVtjDC.jpg",
+  "backdrop": "/s94NjfKkcSczZ1FembwmQZwsuwY.jpg",
+  "sinopse": "No vibrante cenário de um mundo retrofuturista inspirado nos anos 1960, a Primeira Família da Marvel é forçada a equilibrar seus papéis como heróis com a força de seus laços familiares, enquanto defendem a Terra de um deus espacial voraz chamado Galactus e sua enigmática arauta, a Surfista Prateada.",
+  "duracao": 115,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/617126-the-fantastic-4-first-steps/watch?locale=BR"
+  }
+ },
+ {
+  "id": "um-novo-dia",
+  "titulo": "Homem-Aranha: Um Novo Dia",
+  "ano": 2026,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 6,
+  "en": "Spider-Man: Brand New Day",
+  "tmdb": 969681,
+  "poster": "/x0nvYzQpyJc5pdT9lMnkMuYAg0O.jpg",
+  "backdrop": "/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
+  "sinopse": "É um novo dia para Peter Parker. Combatendo o crime em tempo integral como Homem-Aranha em um mundo que não se lembra mais dele e lidando com a pressão de ver seus antigos amigos seguirem em frente sem sua presença, Peter passa por uma mudança que talvez nem ele tenha o poder de controlar. Mas essa transformação também pode ser a única coisa capaz de deter uma surpreendente nova ameaça à cidade e às pessoas que ele ama: um poderoso vilão que ninguém sequer consegue enxergar.",
+  "duracao": 143,
+  "onde": {
+   "streaming": [],
+   "aluguel": false,
+   "link": null
+  }
+ },
+ {
+  "id": "ultimato-encore",
+  "titulo": "Vingadores: Ultimato Encore",
+  "ano": 2026,
+  "tipo": "filme",
+  "franquia": "mcu",
+  "bloco": 7,
+  "en": "Avengers: Endgame",
+  "busca_ano": 2019,
+  "onde_fixo": "Nos cinemas",
+  "tmdb": 299534,
+  "poster": "/q6725aR8Zs4IwGMXzZT8aC8lh41.jpg",
+  "backdrop": "/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
+  "sinopse": "Após os eventos devastadores de \"Vingadores: Guerra Infinita\", o universo está em ruínas devido aos esforços do Titã Louco, Thanos. Com a ajuda de aliados remanescentes, os Vingadores devem se reunir mais uma vez a fim de desfazer as ações de Thanos e restaurar a ordem no universo de uma vez por todas, não importando as consequências.",
+  "duracao": 181,
+  "onde": {
+   "streaming": [
+    {
+     "nome": "Disney Plus",
+     "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+    }
+   ],
+   "aluguel": false,
+   "link": "https://www.themoviedb.org/movie/299534-avengers-endgame/watch?locale=BR"
+  }
+ }
+]
