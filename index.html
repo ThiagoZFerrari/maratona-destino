@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rumo ao Doutor Destino | Checklist da maratona</title>
+<meta name="description" content="Checklist com todos os filmes e séries antes de Vingadores: Doutor Destino, com conquistas, onde assistir e progresso salvo na nuvem.">
+<meta property="og:title" content="Rumo ao Doutor Destino">
+<meta property="og:description" content="77 filmes e séries, conquistas e contagem regressiva pra estreia. Bora maratonar?">
+<meta name="theme-color" content="#E23636">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Archivo:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="marca">Maratona Destino</span>
+    <div class="topbar-acoes">
+      <button class="btn pequeno alt" id="btnConquistas" type="button">🏆 <span id="conqResumo">0</span></button>
+      <div id="contaBox" class="conta" hidden>
+        <span id="nuvemStatus" class="nuvem-status"></span>
+        <button class="btn pequeno" id="btnConta" type="button">Entrar pra salvar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="panel">
+      <div class="balao"><span id="totalItens">77</span> paradas antes do grande dia!</div>
+      <h1>Rumo ao<br>Doutor Destino</h1>
+      <p class="lede">Todos os filmes e séries do MCU, dos X-Men da Fox, do Aranha da Sony e do Demolidor, na ordem de lançamento. Marque o que já viu, desbloqueie conquistas e chegue pronto na estreia.</p>
+      <div class="stats">
+        <div class="stat"><b id="dias">--</b><span>dias até 17/12</span></div>
+        <div class="medidor">
+          <div class="medidor-topo"><span id="vistosTxt">0 vistos</span><span id="pct">0%</span></div>
+          <div class="barra" role="progressbar" aria-label="Progresso da maratona" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="barra"></i></div>
+        </div>
+        <div class="stat" id="statMaratonistas" hidden><b id="maratonistas">0</b><span>maratonistas</span></div>
+        <div class="stat" id="statVisitas" hidden><b id="visitas">0</b><span>visitas</span></div>
+      </div>
+      <div class="acoes">
+        <button class="btn alt" id="btnCard" type="button">Gerar card pros stories</button>
+        <button class="btn" id="btnProximo" type="button">Ir pro próximo</button>
+        <button class="btn escuro" id="btnReset" type="button">Recomeçar</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="proxima" aria-live="polite"></section>
+
+<nav class="toolbar" aria-label="Filtros">
+  <div class="wrap">
+    <div class="seg" role="group" aria-label="Mostrar">
+      <button data-f="todos" aria-pressed="true" type="button">Todos</button>
+      <button data-f="falta" aria-pressed="false" type="button">Falta ver</button>
+      <button data-f="vistos" aria-pressed="false" type="button">Já vi</button>
+    </div>
+    <div class="chips" role="group" aria-label="Franquias">
+      <button data-fr="mcu" aria-pressed="true" type="button"><span class="sw" style="background:var(--red)"></span>MCU</button>
+      <button data-fr="xmen" aria-pressed="true" type="button"><span class="sw" style="background:var(--gold)"></span>X-Men (Fox)</button>
+      <button data-fr="sony" aria-pressed="true" type="button"><span class="sw" style="background:var(--blue)"></span>Sony</button>
+      <button data-fr="netflix" aria-pressed="true" type="button"><span class="sw" style="background:var(--purple)"></span>Netflix</button>
+    </div>
+  </div>
+</nav>
+
+<main class="wrap" id="lista"><p class="vazio">Carregando a lista...</p></main>
+
+<section class="final">
+  <div class="wrap">
+    <div class="panel escuro">
+      <h2>Vingadores: Doutor Destino</h2>
+      <p>Estreia nos cinemas do Brasil em 17 de dezembro de 2026.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="rodape">
+  <div class="wrap">
+    <p>Site de fã, sem fins lucrativos e sem vínculo com Marvel Studios, Disney, Sony ou Netflix.</p>
+    <p>Cartazes, sinopses e dados de onde assistir vêm do <a href="https://www.themoviedb.org" target="_blank" rel="noopener">TMDB</a>, com disponibilidade fornecida pelo <a href="https://www.justwatch.com/br" target="_blank" rel="noopener">JustWatch</a>. Este produto usa a API do TMDB, mas não é endossado ou certificado pelo TMDB.</p>
+  </div>
+</footer>
+
+<dialog id="dlgDetalhe" aria-label="Detalhes"></dialog>
+<dialog id="dlgConquistas" aria-label="Conquistas"></dialog>
+<dialog id="dlgLogin" aria-label="Entrar"></dialog>
+<div id="toasts" class="toasts"></div>
+<button id="somBtn" class="som-btn" type="button" hidden aria-pressed="false">🔇 Ligar trilha</button>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/config.js"></script>
+<script src="js/conquistas.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
