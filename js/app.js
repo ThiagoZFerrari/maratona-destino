@@ -86,6 +86,18 @@ function spotifyEmbed(url) {
   const m = String(url || "").match(/open\.spotify\.com\/(?:intl-[a-z-]+\/)?(playlist|album|track)\/([A-Za-z0-9]+)/);
   return m ? `https://open.spotify.com/embed/${m[1]}/${m[2]}?theme=0` : "";
 }
+function playerTrilha(it) {
+  const src = spotifyEmbed(it.spotify);
+  return src ? `<div class="player-trilha"><iframe src="${src}" title="Trilha sonora de ${esc(it.titulo)}" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>` : "";
+}
+async function carregarSpotify() {
+  try {
+    const r = await fetch("data/spotify.json", { cache: "no-cache" });
+    if (!r.ok) return;
+    const m = await r.json();
+    ITENS.forEach(i => { if (m[i.id] && m[i.id].spotify) i.spotify = m[i.id].spotify; });
+  } catch (_) {}
+}
 
 // ============ lista ============
 function render() {
@@ -190,6 +202,9 @@ function atualizarPainel() {
 function renderProxima() {
   const box = $("#proxima");
   const it = ITENS.find(i => !visto(i.id));
+  const chave = it ? it.id : "fim";
+  if (box.dataset.atual === chave) return;
+  box.dataset.atual = chave;
   if (!it) {
     box.innerHTML = `<div class="wrap"><div class="proxima"><div class="prox-txt"><span class="prox-rotulo">Maratona completa</span><h2>Agora é só esperar o dia 17!</h2></div></div></div>`;
     return;
@@ -205,6 +220,7 @@ function renderProxima() {
           <button class="btn alt" type="button" data-a="marcar">Já vi esse</button>
           <button class="btn" type="button" data-a="detalhe">Detalhes</button>
         </div>
+        ${playerTrilha(it)}
       </div>
     </div></div>`;
   box.querySelector('[data-a="marcar"]').onclick = () => alternar(it.id);
@@ -256,6 +272,7 @@ function preencherDetalhe() {
       <h3>Onde assistir</h3>
       <div class="provs">${ondeHtml}</div>
       <p class="links"><a href="${esc((it.onde && it.onde.link) || linkBusca(it))}" target="_blank" rel="noopener">Ver todas as opções</a></p>
+      ${it.spotify ? `<h3>Trilha sonora</h3>${playerTrilha(it)}` : ""}
       ${textoComunidade(it.id) ? `<p class="comunidade">${textoComunidade(it.id)}</p>` : ""}
       <button class="btn grande ${v ? "" : "alt"}" type="button" data-a="marcar">${v ? "Desmarcar" : "Marcar como visto"}</button>
     </div>`;
@@ -347,11 +364,8 @@ function renderConquistas() {
 // ============ nuvem (Supabase) ============
 function iniciarNuvem() {
   if (!CFG.supabaseUrl || !CFG.supabaseAnonKey || !window.supabase) return;
-  sb = window.supabase.createClient(CFG.supabaseUrl, CFG.supabaseAnonKey, 
-  { auth: { flowType: "implicit", 
-  detectSessionInUrl: true, persistSession: true } });
-  const erroLogin = new URLSearchParams(location.hash.slice(1) || 
-  location.search.slice(1)).get("error_description");
+  sb = window.supabase.createClient(CFG.supabaseUrl, CFG.supabaseAnonKey, { auth: { flowType: "implicit", detectSessionInUrl: true, persistSession: true } });
+  const erroLogin = new URLSearchParams(location.hash.slice(1) || location.search.slice(1)).get("error_description");
   if (erroLogin) aviso("Erro no login: " + erroLogin.replace(/\+/g, " "));
   $("#contaBox").hidden = false;
   $("#btnConta").onclick = () => sessao ? sair() : abrirLogin();
@@ -647,6 +661,7 @@ async function iniciar() {
     return;
   }
   ITENS.forEach(i => { POR_ID[i.id] = i; });
+  await carregarSpotify();
   render();
   atualizarPainel();
   avaliarConquistas(true);

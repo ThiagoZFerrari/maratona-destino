@@ -1,0 +1,324 @@
+{
+ "x-men": {
+  "spotify": "https://open.spotify.com/album/4RfbvV1HIESjWCdFm24O9i",
+  "album": "X-Men (Original Motion Picture Soundtrack)"
+ },
+ "homem-aranha": {
+  "spotify": "https://open.spotify.com/album/4B4Ii8d9SyuIiPDrmhcGGw",
+  "album": "Spider-Man (Original Motion Picture Score)"
+ },
+ "x-men-2": {
+  "spotify": "https://open.spotify.com/album/1PyfLrPlWliP9lI15B192l",
+  "album": "X2: X-Men United (Original Motion Picture Score)"
+ },
+ "homem-aranha-2": {
+  "spotify": "https://open.spotify.com/album/1ewzcnxwhekq50IMd864PW",
+  "album": "Spider-Man 2 Original Motion Picture Score"
+ },
+ "x-men-confronto-final": {
+  "spotify": "https://open.spotify.com/album/6pSBvk9DB7m8XIJLwXcTc3",
+  "album": "X-Men: The Last Stand (Original Motion Picture Soundtrack)"
+ },
+ "homem-aranha-3": {
+  "spotify": "https://open.spotify.com/track/7hV7JECIDZyxH434UCP1cU",
+  "album": "Homem-Aranha 3 (faixa)",
+  "manual": true
+ },
+ "homem-de-ferro": {
+  "spotify": "https://open.spotify.com/track/08mG3Y1vljYA6bvDt4Wqkj",
+  "album": "Homem de Ferro (faixa)",
+  "manual": true
+ },
+ "incrivel-hulk": {
+  "spotify": "https://open.spotify.com/album/5x0CWYcRc6ek2M8W218T6G",
+  "album": "O Incrível Hulk",
+  "manual": true
+ },
+ "x-men-origens-wolverine": {
+  "spotify": "https://open.spotify.com/album/0lFOWhv18EjP9SB1rGxSBm",
+  "album": "X-Men Origins: Wolverine (Original Motion Picture Soundtrack)"
+ },
+ "homem-de-ferro-2": {
+  "spotify": "https://open.spotify.com/album/6bnGdcfwPDRSkj6H8GcbAh",
+  "album": "Original Motion Picture Score Iron Man 2"
+ },
+ "thor": {
+  "spotify": "https://open.spotify.com/album/6rGh1F77U9kZuXsjuCOEDw",
+  "album": "Thor",
+  "manual": true
+ },
+ "x-men-primeira-classe": {
+  "spotify": "https://open.spotify.com/album/14jwLvbmFd60gtCScp5pcc",
+  "album": "X-MEN: FIRST CLASS"
+ },
+ "capitao-america-primeiro-vingador": {
+  "spotify": "https://open.spotify.com/album/0La1Tskamjd6akysepE8r5",
+  "album": "Captain America: The First Avenger"
+ },
+ "os-vingadores": {
+  "spotify": "https://open.spotify.com/album/3wvpIkfl4oOgZLMaQBWadf",
+  "album": "The Avengers (Original Motion Picture Soundtrack)"
+ },
+ "espetacular-homem-aranha": {
+  "spotify": "https://open.spotify.com/album/60IT8AganbZfiCpoJbiEnU",
+  "album": "The Amazing Spider-Man (Music from the Motion Picture)"
+ },
+ "homem-de-ferro-3": {
+  "spotify": "https://open.spotify.com/album/7x6etI9jQ2ePxZUOQaPrbi",
+  "album": "Iron Man 3 (Original Motion Picture Soundtrack)"
+ },
+ "wolverine-imortal": {
+  "spotify": "https://open.spotify.com/album/2wrlDHUaJOIgfOJMcYyW2w",
+  "album": "Wolverine: Imortal",
+  "manual": true
+ },
+ "thor-mundo-sombrio": {
+  "spotify": "https://open.spotify.com/album/2dTEXpN7fg9cJPKCCyDJ1y",
+  "album": "Thor: The Dark World (Original Motion Picture Soundtrack)"
+ },
+ "capitao-america-soldado-invernal": {
+  "spotify": "https://open.spotify.com/album/3nWTffckeFVKV26BNZgKCl",
+  "album": "Captain America: The Winter Soldier (Original Motion Picture Soundtrack)"
+ },
+ "espetacular-homem-aranha-2": {
+  "spotify": "https://open.spotify.com/album/0eHQuQYf91MOoZeUhg2y9d",
+  "album": "The Amazing Spider-Man 2 (The Original Motion Picture Soundtrack) [Deluxe]"
+ },
+ "x-men-dias-futuro-esquecido": {
+  "spotify": "https://open.spotify.com/album/7mS372WUVmnC57NSn4447W",
+  "album": "X-Men: Days of Future Past (Original Motion Picture Soundtrack)"
+ },
+ "guardioes-da-galaxia": {
+  "spotify": "https://open.spotify.com/album/3KxwtSwqC6Ed49laQpSlJM",
+  "album": "Guardians of the Galaxy (Original Score)"
+ },
+ "demolidor-t1": {
+  "spotify": "https://open.spotify.com/album/3ieHHrjkP4K1BDyz2sp6Te",
+  "album": "Demolidor, 1ª temporada",
+  "manual": true
+ },
+ "era-de-ultron": {
+  "spotify": "https://open.spotify.com/album/0xJzVmrwTmCvzaXWzE7jbP",
+  "album": "Avengers: Age of Ultron (Original Motion Picture Soundtrack)"
+ },
+ "homem-formiga": {
+  "spotify": "https://open.spotify.com/album/72mY2C05rfAbkHOax2gJYf",
+  "album": "Ant-Man (Original Motion Picture Soundtrack)"
+ },
+ "deadpool": {
+  "spotify": "https://open.spotify.com/album/6VYJa5gmoecpJavlgh0BHH",
+  "album": "Deadpool",
+  "manual": true
+ },
+ "demolidor-t2": {
+  "spotify": "https://open.spotify.com/album/5yZ2loEtFIeOpuaV2oI2DR",
+  "album": "Demolidor, 2ª temporada",
+  "manual": true
+ },
+ "guerra-civil": {
+  "spotify": "https://open.spotify.com/album/1RjfqRZ2wDniTD5ahkbOgo",
+  "album": "Captain America: Civil War (Original Motion Picture Soundtrack)"
+ },
+ "x-men-apocalipse": {
+  "spotify": "https://open.spotify.com/album/3e8bvsLELZf77awaGKWcCp",
+  "album": "X-Men: Apocalypse (Original Motion Picture Soundtrack)"
+ },
+ "doutor-estranho": {
+  "spotify": "https://open.spotify.com/album/6wLxqu3cGnJoJZyiA3Pe10",
+  "album": "Doctor Strange (Original Motion Picture Soundtrack)"
+ },
+ "logan": {
+  "spotify": "https://open.spotify.com/album/3eTSPhImu0AaJvAurbcISy",
+  "album": "Logan (Original Motion Picture Soundtrack)"
+ },
+ "guardioes-da-galaxia-2": {
+  "spotify": "https://open.spotify.com/album/7zlX0VjDNoIXhZA1IzVN96",
+  "album": "Guardians of the Galaxy Vol. 2 (Original Score)"
+ },
+ "de-volta-ao-lar": {
+  "spotify": "https://open.spotify.com/album/3Aao9FYpxQXuNrAPjJnud1",
+  "album": "Spider-Man: Homecoming (Original Motion Picture Soundtrack)"
+ },
+ "os-defensores": {
+  "spotify": "https://open.spotify.com/album/0gg8kkO3NuMADG3rQTWvWw",
+  "album": "Os Defensores",
+  "manual": true
+ },
+ "thor-ragnarok": {
+  "spotify": "https://open.spotify.com/album/4gecrZPdDxMlVxBtpobpxr",
+  "album": "Thor: Ragnarok (Original Motion Picture Soundtrack)"
+ },
+ "pantera-negra": {
+  "spotify": "https://open.spotify.com/album/3pLdWdkj83EYfDN6H2N8MR",
+  "album": "Pantera Negra",
+  "manual": true
+ },
+ "guerra-infinita": {
+  "spotify": "https://open.spotify.com/album/6Ltf5m1jvSomNQ0bhfuj5O",
+  "album": "Avengers: Infinity War (Original Motion Picture Soundtrack / Deluxe Edition)"
+ },
+ "deadpool-2": {
+  "spotify": "https://open.spotify.com/album/2NvfPngtKzNClIdFMuUAxl",
+  "album": "Deadpool 2 (Original Motion Picture Soundtrack)"
+ },
+ "homem-formiga-e-a-vespa": {
+  "spotify": "https://open.spotify.com/album/6xXdJOLhPTwoYzQU28zeih",
+  "album": "Ant-Man and The Wasp (Original Motion Picture Soundtrack)"
+ },
+ "venom": {
+  "spotify": "https://open.spotify.com/album/1NQw8LapSza8RPYivrwGLM",
+  "album": "Venom (Original Motion Picture Soundtrack)"
+ },
+ "demolidor-t3": {
+  "spotify": "https://open.spotify.com/album/0FzfO0ApQMiPSFMGjsNanb",
+  "album": "Demolidor, 3ª temporada",
+  "manual": true
+ },
+ "capita-marvel": {
+  "spotify": "https://open.spotify.com/album/7JkLtKFArRIE47ungawDy0",
+  "album": "Captain Marvel (Original Motion Picture Soundtrack)"
+ },
+ "ultimato": {
+  "spotify": "https://open.spotify.com/album/6r4Vfnoifx2CLiTKCaKji8",
+  "album": "Avengers: Endgame (Original Motion Picture Soundtrack)"
+ },
+ "fenix-negra": {
+  "spotify": "https://open.spotify.com/album/12fXY8Frs87K8Rh3hkY72X",
+  "album": "Dark Phoenix (Original Motion Picture Soundtrack)"
+ },
+ "longe-de-casa": {
+  "spotify": "https://open.spotify.com/album/7dHHxnqokv90t6wVqTEk6F",
+  "album": "Spider-Man: Far from Home (Original Motion Picture Soundtrack)"
+ },
+ "novos-mutantes": {
+  "spotify": "https://open.spotify.com/album/1xQxe6bKedRCBIXVBtQ3pp",
+  "album": "The New Mutants (Original Motion Picture Soundtrack)"
+ },
+ "wandavision": {
+  "spotify": "https://open.spotify.com/album/7cT5OHwrPtilc4Mf7hBU6N",
+  "album": "WandaVision: Episode 1 (Original Soundtrack)"
+ },
+ "falcao-soldado-invernal": {
+  "spotify": "https://open.spotify.com/album/5rA2ipMGRAUO9MRODPHoHG",
+  "album": "The Falcon and the Winter Soldier: Vol. 1 (Episodes 1-3) [Original Soundtrack]"
+ },
+ "loki-t1": {
+  "spotify": "https://open.spotify.com/album/5Wc11R3nufO8ZAFFhvBGEe",
+  "album": "Loki, 1ª temporada",
+  "manual": true
+ },
+ "viuva-negra": {
+  "spotify": "https://open.spotify.com/album/6ov95v1bTRaC6ds2FaIIcK",
+  "album": "Black Widow (Original Motion Picture Soundtrack)"
+ },
+ "what-if-t1": {
+  "spotify": "https://open.spotify.com/album/61zBoHQeZ0swPHAQZZvxDS",
+  "album": "What If...? (Episode 4) [Original Soundtrack]"
+ },
+ "shang-chi": {
+  "spotify": "https://open.spotify.com/album/72LIvmrUE6L6bBO5gzvbya",
+  "album": "Shang-Chi and the Legend of the Ten Rings (Original Score)"
+ },
+ "venom-carnificina": {
+  "spotify": "https://open.spotify.com/album/5uhuNTf3blfaSexmqLJlZB",
+  "album": "Venom: Let There Be Carnage (Original Motion Picture Soundtrack)"
+ },
+ "eternos": {
+  "spotify": "https://open.spotify.com/album/3qBn8Lw72Fs6zWyA7yFrMn",
+  "album": "Eternals (Original Motion Picture Soundtrack)"
+ },
+ "gaviao-arqueiro": {
+  "spotify": "https://open.spotify.com/album/6kEKPX5fzADIWcFc33qawM",
+  "album": "Hawkeye: Vol. 1 (Episodes 1-3) [Original Soundtrack]"
+ },
+ "sem-volta-para-casa": {
+  "spotify": "https://open.spotify.com/album/1vfxAPvnlWNr5lY9WojHQL",
+  "album": "Spider-Man: No Way Home (Original Motion Picture Soundtrack)"
+ },
+ "morbius": {
+  "spotify": "https://open.spotify.com/album/3ygWwTR4AgvY7ZDdLppmVb",
+  "album": "Morbius (Original Motion Picture Soundtrack)"
+ },
+ "multiverso-da-loucura": {
+  "spotify": "https://open.spotify.com/album/3QDzfMs8x9fkS8vYOKnhfM",
+  "album": "Doctor Strange in the Multiverse of Madness (Original Motion Picture Soundtrack)"
+ },
+ "ms-marvel": {
+  "spotify": "https://open.spotify.com/track/10asHQuP1kwP5GKRMIOkUu",
+  "album": "Ms. Marvel (faixa)",
+  "manual": true
+ },
+ "amor-e-trovao": {
+  "spotify": "https://open.spotify.com/album/18vjqWwWsrtE9tseaLRO8V",
+  "album": "Thor: Love and Thunder (Original Motion Picture Soundtrack)"
+ },
+ "wakanda-para-sempre": {
+  "spotify": "https://open.spotify.com/album/2lPz7qiqG7TfvKr3S1Lv6p",
+  "album": "Black Panther: Wakanda Forever (Original Score)"
+ },
+ "quantumania": {
+  "spotify": "https://open.spotify.com/album/523LVgy2uFE1nD4BgTV57I",
+  "album": "Ant-Man and The Wasp: Quantumania (Original Motion Picture Soundtrack)"
+ },
+ "guardioes-da-galaxia-3": {
+  "spotify": "https://open.spotify.com/album/4WrDwO2xf0pxNmrQpb7e5q",
+  "album": "Guardians of the Galaxy Vol. 3 (Original Score)"
+ },
+ "loki-t2": {
+  "spotify": "https://open.spotify.com/album/0ON2XbuA7tiDhgHQFVadz9",
+  "album": "Loki Season 2 : Episode 1 - Ouroboros (Original Motion Picture Soundtrack)"
+ },
+ "as-marvels": {
+  "spotify": "https://open.spotify.com/album/25yig7YhsFwBFUOcSXEf0c",
+  "album": "The Marvels (Original Motion Picture Soundtrack)"
+ },
+ "what-if-t2": {
+  "spotify": "https://open.spotify.com/album/7iDnSaGcF39gkn8M6FfR7L",
+  "album": "What If...?: Season 2 (Original Soundtrack)"
+ },
+ "madame-teia": {
+  "spotify": "https://open.spotify.com/album/7ji69klj6db0yxbWim3XV6",
+  "album": "Madame Web (Original Motion Picture Soundtrack)"
+ },
+ "deadpool-wolverine": {
+  "spotify": "https://open.spotify.com/album/7tTd4gjNDz51x9jXHdP73D",
+  "album": "Deadpool & Wolverine (Original Motion Picture Soundtrack/Deluxe Edition)"
+ },
+ "venom-ultima-rodada": {
+  "spotify": "https://open.spotify.com/album/7573cAzn5Ro3w2OPEPUtxH",
+  "album": "Venom: The Last Dance (Original Motion Picture Soundtrack)"
+ },
+ "kraven": {
+  "spotify": "https://open.spotify.com/album/6jGKMB5nWY3XDXXpBjAnEB",
+  "album": "Kraven The Hunter (Original Motion Picture Soundtrack)"
+ },
+ "what-if-t3": {
+  "spotify": "https://open.spotify.com/album/4geSYB18nEYbUOqGz96xMu",
+  "album": "What If...?: Season 3 (Original Soundtrack)"
+ },
+ "admiravel-mundo-novo": {
+  "spotify": "https://open.spotify.com/album/2q4CVD8i0EiIk0bwaZEgmn",
+  "album": "Captain America: Brave New World (Original Motion Picture Soundtrack)"
+ },
+ "demolidor-renascido-t1": {
+  "spotify": "https://open.spotify.com/playlist/7fIOAoHVk6NwkNUzd4JjUk",
+  "album": "Demolidor: Renascido, 1ª temporada (playlist)",
+  "manual": true
+ },
+ "thunderbolts": {
+  "spotify": "https://open.spotify.com/album/5JTAY7hOUdzJx2GslB4nwc",
+  "album": "Thunderbolts* (Original Motion Picture Soundtrack)"
+ },
+ "quarteto-fantastico": {
+  "spotify": "https://open.spotify.com/album/0yuJY1TWdXHnG74u5yAPLB",
+  "album": "The Fantastic Four: First Steps (Original Motion Picture Soundtrack)"
+ },
+ "um-novo-dia": {
+  "spotify": "https://open.spotify.com/album/3MnzMfSe5sSUh4Ha5EiXM6",
+  "album": "Spider-Man: Brand New Day (Original Motion Picture Soundtrack)"
+ },
+ "ultimato-encore": {
+  "spotify": "https://open.spotify.com/album/6r4Vfnoifx2CLiTKCaKji8",
+  "album": "Avengers: Endgame (Original Motion Picture Soundtrack)"
+ }
+}
