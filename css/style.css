@@ -173,6 +173,11 @@ h1{
 .final p{margin:8px auto 0; max-width:60ch}
 .rodape{padding:10px 0 40px; font-size:.82rem; color:var(--ink-soft); text-align:center}
 .rodape p{max-width:75ch; margin:8px auto}
+.rodape .criador{font-weight:700; color:var(--ink)}
+.rodape a{font-weight:700}
+.privacidade{max-width:75ch; margin:14px auto 0; text-align:left; border:2px solid var(--line); background:var(--card); padding:8px 14px}
+.privacidade summary{cursor:pointer; font-weight:800; color:var(--ink); text-align:center}
+.privacidade p{margin:10px 0}
 .vazio{padding:30px; text-align:center; font-weight:700; color:var(--ink-soft)}
 
 /* ---------- diálogos ---------- */
