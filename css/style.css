@@ -237,6 +237,30 @@ dialog::backdrop{background:rgba(8,10,30,.72)}
 }
 .som-btn[aria-pressed="true"]{background:var(--gold); color:#161A3A}
 
+/* ---------- trilha automática do filme ---------- */
+.trilha-dock{
+  position:fixed; right:16px; bottom:calc(16px + env(safe-area-inset-bottom,0px)); z-index:40;
+  width:min(360px, calc(100vw - 32px)); background:var(--card); color:var(--ink);
+  border:3px solid var(--line); box-shadow:4px 4px 0 var(--shadow); padding:8px
+}
+.trilha-dock[data-ligado="false"]{width:auto; padding:0; border:0; box-shadow:none; background:none}
+.trilha-dock[data-ligado="false"] .btn{box-shadow:4px 4px 0 var(--shadow)}
+.trilha-dock-topo{display:flex; align-items:center; justify-content:space-between; gap:8px}
+.trilha-dock-rotulo{font-weight:800; font-size:.85rem; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.trilha-dock-rotulo:empty{display:none}
+.trilha-dock-player{margin-top:8px}
+.trilha-dock-player iframe{display:block; width:100%; height:80px; border:0; border-radius:12px}
+.trilha-dock-player small{display:block; margin-top:4px; color:var(--ink-soft); font-size:.72rem}
+
+/* ---------- apagar dados ---------- */
+.btn.perigo{background:#B3261E; color:#fff}
+
+/* ---------- lista em HTML puro (pro Google e pra quem está sem JavaScript) ---------- */
+.js .lista-estatica{display:none}
+.lista-estatica{padding:10px 0 30px}
+.lista-estatica h2{font-family:var(--display); font-weight:400; letter-spacing:1px; font-size:1.8rem}
+.lista-estatica h3{margin:18px 0 6px}
+
 @media (max-width:560px){
   .grid{grid-template-columns:1fr 1fr; gap:12px}
   .panel{padding:24px 18px 20px; box-shadow:6px 6px 0 var(--shadow)}
@@ -245,5 +269,6 @@ dialog::backdrop{background:rgba(8,10,30,.72)}
   .stat{min-width:0; flex:1 1 40%}
   .capa-gibi .titulo-gibi{font-size:1.35rem}
   .som-btn{bottom:calc(80px + env(safe-area-inset-bottom,0px))}
+  .trilha-dock{right:12px; bottom:calc(80px + env(safe-area-inset-bottom,0px))}
 }
 @media (prefers-reduced-motion: reduce){ *{transition:none !important; animation:none !important} }

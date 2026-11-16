@@ -49,3 +49,17 @@ $$;
 
 revoke all on function public.estatisticas(int) from public;
 grant execute on function public.estatisticas(int) to anon, authenticated;
+
+-- Apagar a própria conta (LGPD): remove o login e, em cascata, a linha de progresso.
+-- Só apaga a conta de quem está logado (auth.uid()); visitante sem login não apaga nada.
+create or replace function public.apagar_minha_conta()
+returns void
+language sql
+security definer
+set search_path = ''
+as $$
+  delete from auth.users where id = auth.uid();
+$$;
+
+revoke all on function public.apagar_minha_conta() from public, anon;
+grant execute on function public.apagar_minha_conta() to authenticated;
