@@ -17,7 +17,7 @@ window.MARATONA_CONFIG = {
   // ---- Doação por Pix (deixe vazio pra esconder o botão "Apoie a maratona")
   // Cole aqui o código "Pix copia e cola" gerado no app do banco, com CHAVE ALEATÓRIA e sem valor definido.
   // O QR Code é gerado automaticamente a partir desse código.
-  pixCopiaECola: "",
+  pixCopiaECola: "00020126580014BR.GOV.BCB.PIX0136843f32bc-6298-4341-889f-baad685d900d5204000053039865802BR5924Thiago Zimermann Ferrari6009SAO PAULO62140510dlf3NPc2uZ6304DE32",
 
   // ---- Trilha de cada bloco
   // musica: arquivo MP3 livre de direitos dentro da pasta /musica (ex.: "musica/bloco1.mp3")
