@@ -13,7 +13,8 @@ Criei este site pra organizar a minha maratona de filmes e séries antes de **Vi
 - Mostra estatísticas da comunidade, como quantas pessoas já marcaram cada filme e a raridade de cada conquista
 - Gera um card personalizado pra postar nos stories
 - Conta regressiva até a estreia
-- Trilha sonora que muda a cada bloco da maratona
+- Trilha sonora automática: toca o álbum da trilha do próximo filme da maratona e troca sozinha quando você marca o filme como visto
+- Botão pra apagar os próprios dados (navegador, conta e nuvem), como pede a LGPD
 
 ## Tecnologias
 
@@ -34,6 +35,7 @@ js/app.js lógica principal
 data/lista.json os 77 títulos na ordem da maratona
 data/filmes.json dados gerados a partir do TMDB
 scripts/gerar_dados.py script que busca os dados no TMDB
+scripts/gerar_lista_html.py script que escreve a lista dos títulos no index.html (SEO)
 supabase/schema.sql estrutura do banco de dados
 musica/ trilhas livres de direitos
 
@@ -56,9 +58,17 @@ python scripts/gerar_dados.py SUA_CHAVE
 
 O script gera o `data/filmes.json` com cartazes, sinopses e onde assistir. Se algum título não for encontrado automaticamente, dá pra colocar o ID do TMDB manualmente no `lista.json` e rodar de novo. Vale rodar de tempos em tempos, porque os catálogos de streaming mudam bastante.
 
+## Lista em HTML (SEO)
+
+O Google e as prévias de link nem sempre rodam JavaScript, então o `index.html` também traz a lista dos títulos em HTML puro. Quem abre o site normalmente não vê essa lista. Sempre que mudar o `lista.json`, rode:
+
+```
+python scripts/gerar_lista_html.py
+```
+
 ## Banco de dados
 
-O `supabase/schema.sql` cria a tabela de progresso, as regras de segurança e uma função que calcula as estatísticas da comunidade usando só números agregados, sem expor dados de ninguém.
+O `supabase/schema.sql` cria a tabela de progresso, as regras de segurança e uma função que calcula as estatísticas da comunidade usando só números agregados, sem expor dados de ninguém. Também cria a função `apagar_minha_conta`, que o botão "Apagar meus dados" usa pra excluir a conta de quem está logado (e, em cascata, o progresso dela).
 
 ## Criando conquistas novas
 

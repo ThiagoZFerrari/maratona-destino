@@ -205,6 +205,7 @@ function renderProxima() {
   const chave = it ? it.id : "fim";
   if (box.dataset.atual === chave) return;
   box.dataset.atual = chave;
+  TrilhaFilme.atualizar(it || null);
   if (!it) {
     box.innerHTML = `<div class="wrap"><div class="proxima"><div class="prox-txt"><span class="prox-rotulo">Maratona completa</span><h2>Agora é só esperar o dia 17!</h2></div></div></div>`;
     return;
@@ -220,7 +221,6 @@ function renderProxima() {
           <button class="btn alt" type="button" data-a="marcar">Já vi esse</button>
           <button class="btn" type="button" data-a="detalhe">Detalhes</button>
         </div>
-        ${playerTrilha(it)}
       </div>
     </div></div>`;
   box.querySelector('[data-a="marcar"]').onclick = () => alternar(it.id);
@@ -418,6 +418,23 @@ async function sair() {
   await sb.auth.signOut();
   aviso("Você saiu. Seu progresso continua salvo neste aparelho.");
 }
+// LGPD: apaga a conta e o progresso na nuvem (se logado) e tudo deste navegador
+async function apagarDados() {
+  const tinhaConta = !!(sb && sessao);
+  if (tinhaConta) {
+    clearTimeout(envioT);
+    const { error } = await sb.rpc("apagar_minha_conta");
+    if (error) { aviso("Não consegui apagar sua conta agora. Tente de novo em alguns minutos."); return; }
+    sincronizado = false; // impede que algum envio pendente recrie os dados
+    try { await sb.auth.signOut({ scope: "local" }); } catch (_) {}
+  }
+  estado = { vistos: {}, conquistas: {}, eventos: {} };
+  try { localStorage.removeItem(CHAVE); } catch (_) {}
+  render();
+  atualizarPainel();
+  carregarStats();
+  aviso(tinhaConta ? "Pronto! Sua conta e todos os seus dados foram apagados." : "Pronto! Seus dados foram apagados deste navegador.");
+}
 function abrirLogin() {
   const d = $("#dlgLogin");
   d.innerHTML = `
@@ -528,6 +545,114 @@ const Som = (() => {
     atualizarBtn();
   }
   return { iniciar, tocar, ativo };
+})();
+
+// ============ trilha automática do filme (Spotify) ============
+// Toca o álbum da trilha da "Próxima parada" e troca sozinho quando você marca o filme como visto.
+// Os navegadores só deixam tocar som depois que a pessoa interage com a página,
+// então a primeira vez precisa de um clique em "Trilha automática". Depois disso a escolha
+// fica salva, e nas próximas visitas a música começa no primeiro toque em qualquer lugar.
+const TrilhaFilme = (() => {
+  const PREF = "maratona-trilha-auto";
+  let ativo = false, ligado = false, controller = null, carregandoApi = false;
+  let itemAtual = null, uriAtual = "", uriCarregada = "", tocarQuandoPronto = false, reservaT = null;
+
+  const uriSpotify = url => {
+    const m = String(url || "").match(/open\.spotify\.com\/(?:intl-[a-z-]+\/)?(playlist|album|track)\/([A-Za-z0-9]+)/);
+    return m ? `spotify:${m[1]}:${m[2]}` : "";
+  };
+  const lerPref = () => { try { return localStorage.getItem(PREF) === "1"; } catch (_) { return false; } };
+  const salvarPref = v => { try { localStorage.setItem(PREF, v ? "1" : "0"); } catch (_) {} };
+
+  function darPlay() {
+    clearTimeout(reservaT);
+    if (!ligado || !controller) return;
+    tocarQuandoPronto = false;
+    controller.play();
+  }
+  // Se o evento "ready" não vier depois de trocar o álbum, tenta tocar mesmo assim
+  function playDeReserva() {
+    clearTimeout(reservaT);
+    reservaT = setTimeout(() => { if (tocarQuandoPronto) darPlay(); }, 2500);
+  }
+
+  function carregarApi() {
+    if (controller || carregandoApi) return;
+    carregandoApi = true;
+    window.onSpotifyIframeApiReady = api => {
+      api.createController($("#trilhaAlvo"), { uri: uriAtual, width: "100%", height: 80 }, c => {
+        controller = c;
+        uriCarregada = uriAtual;
+        c.addListener("ready", () => { if (tocarQuandoPronto) darPlay(); });
+        playDeReserva();
+      });
+    };
+    const s = document.createElement("script");
+    s.src = "https://open.spotify.com/embed/iframe-api/v1";
+    s.async = true;
+    s.onerror = () => { carregandoApi = false; aviso("Não consegui carregar o player do Spotify."); };
+    document.body.appendChild(s);
+  }
+
+  function tocar() {
+    if (!ligado || !uriAtual) return;
+    tocarQuandoPronto = true;
+    if (!controller) { carregarApi(); return; }
+    if (uriCarregada !== uriAtual) {
+      uriCarregada = uriAtual;
+      controller.loadUri(uriAtual);
+      playDeReserva();
+    } else darPlay();
+  }
+
+  function atualizarUI() {
+    const dock = $("#trilhaDock"), btn = $("#trilhaBtn");
+    dock.dataset.ligado = ligado;
+    btn.setAttribute("aria-pressed", ligado);
+    btn.textContent = ligado ? "⏸ Desligar" : "🎧 Trilha automática";
+    $("#trilhaRotulo").textContent = ligado && itemAtual ? `Trilha de ${itemAtual.titulo}` : "";
+    $("#trilhaPlayer").hidden = !ligado;
+  }
+
+  function alternar() {
+    ligado = !ligado;
+    salvarPref(ligado);
+    atualizarUI();
+    if (ligado) tocar();
+    else { tocarQuandoPronto = false; clearTimeout(reservaT); if (controller) controller.pause(); }
+  }
+
+  // Chamado pela "Próxima parada" sempre que o próximo filme muda
+  function atualizar(it) {
+    itemAtual = it;
+    uriAtual = it ? uriSpotify(it.spotify) : "";
+    if (!ativo) return;
+    atualizarUI();
+    if (!uriAtual) { if (controller) controller.pause(); return; }
+    if (ligado && controller) tocar();
+  }
+
+  function iniciar() {
+    if (Som.ativo || !ITENS.some(i => i.spotify)) return; // a trilha por bloco (MP3) tem prioridade
+    ativo = true;
+    $("#trilhaDock").hidden = false;
+    $("#trilhaBtn").onclick = alternar;
+    ligado = lerPref();
+    atualizarUI();
+    if (ligado) {
+      // Espera o primeiro toque na página, que é quando o navegador libera o som
+      const primeiroToque = e => {
+        document.removeEventListener("pointerdown", primeiroToque, true);
+        document.removeEventListener("keydown", primeiroToque, true);
+        if (e.target.closest && e.target.closest("#trilhaBtn")) return; // o próprio botão já resolve
+        tocar();
+      };
+      document.addEventListener("pointerdown", primeiroToque, true);
+      document.addEventListener("keydown", primeiroToque, true);
+    }
+  }
+
+  return { iniciar, atualizar };
 })();
 
 let observador = null;
@@ -646,6 +771,20 @@ function iniciarUI() {
     persistir(); render(); atualizarPainel();
     aviso("Marcações apagadas. Suas conquistas continuam!");
   };
+  let armadoApagar = false, armadoApagarT;
+  $("#btnApagarDados").onclick = async e => {
+    const b = e.currentTarget;
+    if (!armadoApagar) {
+      armadoApagar = true;
+      b.textContent = sessao ? "Toque de novo pra apagar a conta e tudo" : "Toque de novo pra apagar tudo";
+      armadoApagarT = setTimeout(() => { armadoApagar = false; b.textContent = "Apagar meus dados"; }, 4000);
+      return;
+    }
+    clearTimeout(armadoApagarT); armadoApagar = false;
+    b.disabled = true; b.textContent = "Apagando...";
+    await apagarDados();
+    b.disabled = false; b.textContent = "Apagar meus dados";
+  };
   ["#dlgDetalhe", "#dlgConquistas", "#dlgLogin"].forEach(s => {
     const d = $(s);
     d.addEventListener("click", e => { if (e.target === d) d.close(); });
@@ -666,6 +805,8 @@ async function iniciar() {
   atualizarPainel();
   avaliarConquistas(true);
   Som.iniciar();
+  TrilhaFilme.iniciar();
+  TrilhaFilme.atualizar(ITENS.find(i => !visto(i.id)) || null);
   observarBlocos();
   iniciarVisitas();
   iniciarNuvem();
