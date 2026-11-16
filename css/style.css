@@ -250,7 +250,6 @@ dialog::backdrop{background:rgba(8,10,30,.72)}
 .trilha-dock-rotulo:empty{display:none}
 .trilha-dock-player{margin-top:8px}
 .trilha-dock-player iframe{display:block; width:100%; height:80px; border:0; border-radius:12px}
-.trilha-dock-player small{display:block; margin-top:4px; color:var(--ink-soft); font-size:.72rem}
 
 /* ---------- apagar dados ---------- */
 .btn.perigo{background:#B3261E; color:#fff}
