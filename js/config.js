@@ -14,6 +14,11 @@ window.MARATONA_CONFIG = {
   // Se o seu painel é https://maratona.goatcounter.com, coloque só "maratona"
   goatcounter: "",
 
+  // ---- Doação por Pix (deixe vazio pra esconder o botão "Apoie a maratona")
+  // Cole aqui o código "Pix copia e cola" gerado no app do banco, com CHAVE ALEATÓRIA e sem valor definido.
+  // O QR Code é gerado automaticamente a partir desse código.
+  pixCopiaECola: "",
+
   // ---- Trilha de cada bloco
   // musica: arquivo MP3 livre de direitos dentro da pasta /musica (ex.: "musica/bloco1.mp3")
   // spotify: link de playlist/álbum do Spotify (ex.: "https://open.spotify.com/playlist/...")

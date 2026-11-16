@@ -666,6 +666,47 @@ function observarBlocos() {
   document.querySelectorAll(".bloco").forEach(s => observador.observe(s));
 }
 
+// ============ apoie a maratona (Pix) ============
+function iniciarApoio() {
+  if (!CFG.pixCopiaECola) return; // sem código Pix no config.js, o botão fica escondido
+  $("#btnApoiar").hidden = false;
+  $("#btnApoiar").onclick = abrirApoio;
+}
+function abrirApoio() {
+  const d = $("#dlgApoiar");
+  d.innerHTML = `
+    <div class="dlg-cab">
+      <button class="fechar" type="button" aria-label="Fechar">✕</button>
+      <h2>Apoie a maratona</h2>
+      <p>O site é gratuito e feito por um fã.</p>
+    </div>
+    <div class="dlg-corpo apoio">
+      <p>Se quiser ajudar, sua doação vai pra manter o site no ar (domínio e serviços) e pras próximas melhorias. Qualquer valor ajuda, e doar é totalmente opcional: o site continua igual pra todo mundo.</p>
+      <div class="pix-qr" role="img" aria-label="QR Code do Pix"></div>
+      <label for="pixCodigo">Pix copia e cola</label>
+      <textarea id="pixCodigo" class="pix-codigo" readonly rows="3"></textarea>
+      <button class="btn alt grande" type="button" data-a="copiar">Copiar código Pix</button>
+      <p class="msg" aria-live="polite"></p>
+      <p class="pix-nota">Na hora de confirmar, o app do banco mostra o nome de quem recebe. A doação não dá nenhuma vantagem no site.</p>
+    </div>`;
+  const codigo = CFG.pixCopiaECola;
+  d.querySelector("#pixCodigo").value = codigo;
+  try {
+    const qr = qrcode(0, "M");
+    qr.addData(codigo);
+    qr.make();
+    d.querySelector(".pix-qr").innerHTML = qr.createSvgTag({ cellSize: 4, margin: 3, scalable: true });
+  } catch (_) { d.querySelector(".pix-qr").hidden = true; }
+  const msg = d.querySelector(".msg");
+  d.querySelector('[data-a="copiar"]').onclick = async () => {
+    try { await navigator.clipboard.writeText(codigo); }
+    catch (_) { const t = d.querySelector("#pixCodigo"); t.select(); document.execCommand("copy"); }
+    msg.textContent = "Código copiado! Agora é só colar na área Pix do app do seu banco. Valeu demais! 🍿";
+  };
+  d.querySelector(".fechar").onclick = () => d.close();
+  d.showModal();
+}
+
 // ============ card pros stories ============
 async function gerarCard() {
   try { await Promise.all([document.fonts.load("100px Bangers"), document.fonts.load("800 40px Archivo")]); } catch (_) {}
@@ -786,7 +827,7 @@ function iniciarUI() {
     await apagarDados();
     b.disabled = false; b.textContent = "Apagar meus dados";
   };
-  ["#dlgDetalhe", "#dlgConquistas", "#dlgLogin"].forEach(s => {
+  ["#dlgDetalhe", "#dlgConquistas", "#dlgLogin", "#dlgApoiar"].forEach(s => {
     const d = $(s);
     d.addEventListener("click", e => { if (e.target === d) d.close(); });
   });
@@ -810,6 +851,7 @@ async function iniciar() {
   TrilhaFilme.atualizar(ITENS.find(i => !visto(i.id)) || null);
   observarBlocos();
   iniciarVisitas();
+  iniciarApoio();
   iniciarNuvem();
 }
 iniciar();
