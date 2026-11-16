@@ -610,7 +610,7 @@ const TrilhaFilme = (() => {
     dock.dataset.ligado = ligado;
     btn.setAttribute("aria-pressed", ligado);
     btn.textContent = ligado ? "⏸ Desligar" : "🎧 Trilha automática";
-    $("#trilhaRotulo").textContent = ligado && itemAtual ? `Trilha de ${itemAtual.titulo}` : "";
+    btn.hidden = ligado; // ligado: só o player e o ✕
     $("#trilhaPlayer").hidden = !ligado;
   }
 
@@ -637,6 +637,7 @@ const TrilhaFilme = (() => {
     ativo = true;
     $("#trilhaDock").hidden = false;
     $("#trilhaBtn").onclick = alternar;
+    $("#trilhaFechar").onclick = alternar;
     ligado = lerPref();
     atualizarUI();
     if (ligado) {
@@ -644,7 +645,7 @@ const TrilhaFilme = (() => {
       const primeiroToque = e => {
         document.removeEventListener("pointerdown", primeiroToque, true);
         document.removeEventListener("keydown", primeiroToque, true);
-        if (e.target.closest && e.target.closest("#trilhaBtn")) return; // o próprio botão já resolve
+        if (e.target.closest && e.target.closest("#trilhaBtn, #trilhaFechar")) return; // os próprios botões já resolvem
         tocar();
       };
       document.addEventListener("pointerdown", primeiroToque, true);
