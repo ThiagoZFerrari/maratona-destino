@@ -246,9 +246,13 @@ dialog::backdrop{background:rgba(8,10,30,.72)}
 .trilha-dock[data-ligado="false"]{width:auto; padding:0; border:0; box-shadow:none; background:none}
 .trilha-dock[data-ligado="false"] .btn{box-shadow:4px 4px 0 var(--shadow)}
 .trilha-dock-topo{display:flex; align-items:center; justify-content:space-between; gap:8px}
-.trilha-dock-rotulo{font-weight:800; font-size:.85rem; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
-.trilha-dock-rotulo:empty{display:none}
-.trilha-dock-player{margin-top:8px}
+.trilha-dock[data-ligado="true"]{width:min(320px, calc(100vw - 32px)); padding:5px}
+.trilha-dock[data-ligado="true"] .trilha-dock-topo{display:none}
+.trilha-dock-player{position:relative}
+.trilha-fechar{
+  position:absolute; top:-24px; right:-24px; z-index:1; width:26px; height:26px; padding:0; border-radius:50%;
+  border:2px solid var(--line); background:var(--card); color:var(--ink); font-size:.8rem; font-weight:800; line-height:1
+}
 .trilha-dock-player iframe{display:block; width:100%; height:80px; border:0; border-radius:12px}
 
 /* ---------- apagar dados ---------- */
