@@ -63,3 +63,18 @@ $$;
 
 revoke all on function public.apagar_minha_conta() from public, anon;
 grant execute on function public.apagar_minha_conta() to authenticated;
+
+-- Limite de tamanho: impede que alguém lote o banco gravando um "progresso" gigante
+-- (77 títulos e 51 conquistas ocupam só alguns KB)
+alter table public.progresso drop constraint if exists progresso_tamanho;
+alter table public.progresso add constraint progresso_tamanho check (
+  pg_column_size(vistos) < 16384 and pg_column_size(conquistas) < 16384 and pg_column_size(eventos) < 8192
+);
+
+-- A função rls_auto_enable (criada pelo Supabase) não precisa ser chamada pelo site
+do $$
+begin
+  if to_regprocedure('public.rls_auto_enable()') is not null then
+    revoke execute on function public.rls_auto_enable() from public, anon, authenticated;
+  end if;
+end $$;
