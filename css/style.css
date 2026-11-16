@@ -275,3 +275,11 @@ dialog::backdrop{background:rgba(8,10,30,.72)}
   .trilha-dock{right:12px; bottom:calc(80px + env(safe-area-inset-bottom,0px))}
 }
 @media (prefers-reduced-motion: reduce){ *{transition:none !important; animation:none !important} }
+
+/* ---------- apoie a maratona (Pix) ---------- */
+.apoio label{display:block; font-weight:800; margin:14px 0 4px}
+.pix-qr{width:220px; max-width:100%; margin:14px auto 0; background:#fff; border:3px solid var(--line); box-shadow:4px 4px 0 var(--shadow)}
+.pix-qr svg{display:block; width:100%; height:auto}
+.pix-codigo{width:100%; font:inherit; font-size:.78rem; padding:8px; border:2px solid var(--line); background:var(--muted); color:var(--ink); resize:none; word-break:break-all; margin-bottom:10px}
+.apoio .msg{font-weight:700; min-height:1.2em; margin:8px 0 0}
+.pix-nota{font-size:.8rem; color:var(--ink-soft)}

@@ -13,6 +13,7 @@ Criei este site pra organizar a minha maratona de filmes e séries antes de **Vi
 - Mostra estatísticas da comunidade, como quantas pessoas já marcaram cada filme e a raridade de cada conquista
 - Gera um card personalizado pra postar nos stories
 - Conta regressiva até a estreia
+- Botão "Apoie a maratona" com doação por Pix (QR Code e copia e cola), que só aparece quando o `pixCopiaECola` está preenchido no `config.js`
 - Trilha sonora automática: toca o álbum da trilha do próximo filme da maratona e troca sozinha quando você marca o filme como visto
 - Botão pra apagar os próprios dados (navegador, conta e nuvem), como pede a LGPD
 
@@ -24,6 +25,7 @@ Criei este site pra organizar a minha maratona de filmes e séries antes de **Vi
 - **API do TMDB** pros cartazes, sinopses e dados de streaming
 - **Python** no script que busca os dados do TMDB
 - **GoatCounter** pro contador de acessos, sem cookies
+- **qrcode-generator** (MIT, de Kazuhiko Arase) pra gerar o QR Code do Pix, em `js/vendor/`
 
 ## Estrutura
 
