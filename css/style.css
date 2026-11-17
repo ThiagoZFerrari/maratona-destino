@@ -283,3 +283,14 @@ dialog::backdrop{background:rgba(8,10,30,.72)}
 .pix-codigo{width:100%; font:inherit; font-size:.78rem; padding:8px; border:2px solid var(--line); background:var(--muted); color:var(--ink); resize:none; word-break:break-all; margin-bottom:10px}
 .apoio .msg{font-weight:700; min-height:1.2em; margin:8px 0 0}
 .pix-nota{font-size:.8rem; color:var(--ink-soft)}
+
+/* ---------- aviso de cookies ---------- */
+.aviso-cookies{
+  position:fixed; left:16px; bottom:calc(16px + env(safe-area-inset-bottom,0px)); z-index:45;
+  width:min(420px, calc(100vw - 32px)); background:var(--card); color:var(--ink);
+  border:3px solid var(--line); box-shadow:5px 5px 0 var(--shadow); padding:12px 14px; font-size:.88rem
+}
+.aviso-cookies p{margin:0 0 10px}
+.aviso-cookies a{font-weight:800}
+.aviso-cookies-acoes{display:flex; gap:10px}
+@media (max-width:560px){ .aviso-cookies{left:12px; bottom:calc(140px + env(safe-area-inset-bottom,0px))} }

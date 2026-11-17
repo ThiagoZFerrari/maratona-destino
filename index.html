@@ -200,14 +200,15 @@
     <details class="privacidade">
       <summary>Aviso de privacidade</summary>
       <p><b>Quem cuida dos seus dados.</b> O site é mantido por Thiago Ferrari, que é o responsável pelos dados tratados aqui. Contato: <a href="mailto:contatomaratonamultiverso@gmail.com">contatomaratonamultiverso@gmail.com</a> ou <a href="https://www.instagram.com/thiagoz_ferrari/" target="_blank" rel="noopener">Instagram @thiagoz_ferrari</a>.</p>
-      <p><b>O que fica salvo.</b> Sem entrar na conta, seu progresso, suas conquistas e a sua escolha de ligar ou não a trilha automática ficam guardados só neste navegador. Se você entrar com o e-mail, guardamos o seu e-mail, os títulos que você marcou e as conquistas desbloqueadas, pra você não perder nada ao trocar de aparelho.</p>
+      <p><b>O que fica salvo.</b> Sem entrar na conta, seu progresso, suas conquistas a sua escolha de ligar ou não a trilha automática e a sua resposta ao aviso de cookies ficam guardados só neste navegador. Se você entrar com o e-mail, guardamos o seu e-mail, os títulos que você marcou e as conquistas desbloqueadas, pra você não perder nada ao trocar de aparelho.</p>
       <p><b>Pra que serve e com base em quê.</b> O e-mail é usado apenas pra enviar o link de acesso e identificar a sua conta. Não mandamos propaganda e não vendemos nem compartilhamos seus dados com ninguém. Os dados da conta são tratados com base no seu consentimento, dado quando você escolhe criar a conta, e você pode retirá-lo quando quiser apagando seus dados. As estatísticas da comunidade, como quantas pessoas marcaram um filme, usam só números totais, sem identificar ninguém.</p>
       <p><b>Onde fica e por quanto tempo.</b> Os dados da conta ficam guardados no Supabase, em servidores em São Paulo, protegidos de forma que cada pessoa só acessa o próprio progresso. Eles ficam guardados enquanto a sua conta existir e são apagados quando você usa o botão abaixo ou pede a exclusão.</p>
       <p><b>Serviços de terceiros.</b> O site exibe cartazes do TMDB e fontes do Google, e pode usar um contador de visitas anônimo. O player do Spotify só é carregado quando você liga a trilha automática ou abre os detalhes de um título, e pode usar cookies dele. Esses serviços seguem as próprias políticas de privacidade. Doações por Pix acontecem direto no app do seu banco: o site não recebe nem guarda nenhum dado delas.</p>
+      <p><b>Estatísticas de visita (Google Analytics).</b> Se você aceitar no aviso de cookies, o site carrega o Google Analytics, pelo Google Tag Manager. Ele usa cookies e envia ao Google informações de navegação, como as páginas vistas, o tipo de aparelho e a região aproximada, pra gente entender quantas pessoas visitam o site e o que mais usam, sempre em números totais. Isso só acontece com o seu consentimento: se você recusar, ele não é carregado. Você pode mudar sua escolha quando quiser pelo botão abaixo.</p>
       <p><b>Crianças.</b> Se você tem menos de 12 anos, só crie uma conta com a autorização e a ajuda de um responsável.</p>
       <p><b>Seus direitos.</b> Pela LGPD, você pode apagar seus dados a qualquer momento pelo botão abaixo: ele apaga o progresso deste navegador e, se você estiver logado, também a sua conta e tudo o que estava salvo na nuvem. Pra pedir uma cópia dos seus dados, tirar dúvidas ou fazer qualquer outro pedido sobre eles, escreva pra <a href="mailto:contatomaratonamultiverso@gmail.com">contatomaratonamultiverso@gmail.com</a>.</p>
-      <p><small>Atualizado em 16 de novembro de 2026.</small></p>
-      <p><button class="btn pequeno perigo" id="btnApagarDados" type="button">Apagar meus dados</button></p>
+      <p><small>Atualizado em 17 de novembro de 2026.</small></p>
+      <p><button class="btn pequeno" id="btnCookies" type="button" hidden>Preferências de cookies</button> <button class="btn pequeno perigo" id="btnApagarDados" type="button">Apagar meus dados</button></p>
     </details>
   </div>
 </footer>
@@ -217,6 +218,13 @@
 <dialog id="dlgLogin" aria-label="Entrar"></dialog>
 <dialog id="dlgApoiar" aria-label="Apoie a maratona"></dialog>
 <div id="toasts" class="toasts"></div>
+<div id="avisoCookies" class="aviso-cookies" role="region" aria-label="Aviso de cookies" hidden>
+  <p>🍪 Posso usar o <b>Google Analytics</b> pra contar as visitas e saber o que vocês mais usam no site? Ele usa cookies e só é ativado se você aceitar. <a href="#" id="cookiesSaibaMais">Saiba mais</a></p>
+  <div class="aviso-cookies-acoes">
+    <button class="btn pequeno alt" id="cookiesAceitar" type="button">Aceitar</button>
+    <button class="btn pequeno" id="cookiesRecusar" type="button">Recusar</button>
+  </div>
+</div>
 <button id="somBtn" class="som-btn" type="button" hidden aria-pressed="false">🔇 Ligar trilha</button>
 <div id="trilhaDock" class="trilha-dock" data-ligado="false" hidden>
   <div class="trilha-dock-topo">

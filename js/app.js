@@ -666,6 +666,47 @@ function observarBlocos() {
   document.querySelectorAll(".bloco").forEach(s => observador.observe(s));
 }
 
+// ============ Google Analytics (só com consentimento) ============
+const PREF_ANALYTICS = "maratona-analytics";
+function lerConsentimento() { try { return localStorage.getItem(PREF_ANALYTICS); } catch (_) { return null; } }
+function salvarConsentimento(v) { try { localStorage.setItem(PREF_ANALYTICS, v); } catch (_) {} }
+function carregarGTM() {
+  if (window.__gtmCarregado) return;
+  window.__gtmCarregado = true;
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ "gtm.start": Date.now(), event: "gtm.js" });
+  const s = document.createElement("script");
+  s.async = true;
+  s.src = "https://www.googletagmanager.com/gtm.js?id=" + encodeURIComponent(CFG.gtm);
+  document.head.appendChild(s);
+}
+function apagarCookiesAnalytics() {
+  const dominios = ["", location.hostname, "." + location.hostname.replace(/^www\./, "")];
+  document.cookie.split(";").map(c => c.split("=")[0].trim()).filter(n => /^_ga|^_gid|^_gat/.test(n)).forEach(n => {
+    dominios.forEach(d => { document.cookie = `${n}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/${d ? "; domain=" + d : ""}`; });
+  });
+}
+function iniciarAnalytics() {
+  if (!CFG.gtm) return;
+  const caixa = $("#avisoCookies"), btnPref = $("#btnCookies");
+  btnPref.hidden = false;
+  const escolher = aceitou => {
+    const antes = lerConsentimento();
+    salvarConsentimento(aceitou ? "sim" : "nao");
+    caixa.hidden = true;
+    if (aceitou) { carregarGTM(); return; }
+    apagarCookiesAnalytics();
+    if (antes === "sim" && window.__gtmCarregado) { aviso("Pronto! O Google Analytics foi desligado."); setTimeout(() => location.reload(), 1200); }
+  };
+  $("#cookiesAceitar").onclick = () => escolher(true);
+  $("#cookiesRecusar").onclick = () => escolher(false);
+  $("#cookiesSaibaMais").onclick = e => { e.preventDefault(); const p = document.querySelector(".privacidade"); p.open = true; p.scrollIntoView({ behavior: "smooth", block: "center" }); };
+  btnPref.onclick = () => { caixa.hidden = false; };
+  const c = lerConsentimento();
+  if (c === "sim") carregarGTM();
+  else if (c !== "nao") caixa.hidden = false;
+}
+
 // ============ apoie a maratona (Pix) ============
 function iniciarApoio() {
   if (!CFG.pixCopiaECola) return; // sem código Pix no config.js, o botão fica escondido
@@ -852,6 +893,7 @@ async function iniciar() {
   observarBlocos();
   iniciarVisitas();
   iniciarApoio();
+  iniciarAnalytics();
   iniciarNuvem();
 }
 iniciar();
