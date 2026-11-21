@@ -21,7 +21,8 @@
    ],
    "aluguel": false,
    "link": "https://www.themoviedb.org/movie/36657-x-men/watch?locale=BR"
-  }
+  },
+  "essencial": true
  },
  {
   "id": "homem-aranha",
@@ -93,7 +94,8 @@
    ],
    "aluguel": false,
    "link": "https://www.themoviedb.org/movie/36658-x2/watch?locale=BR"
-  }
+  },
+  "essencial": true
  },
  {
   "id": "homem-aranha-2",
@@ -368,7 +370,8 @@
    ],
    "aluguel": false,
    "link": "https://www.themoviedb.org/movie/1771-captain-america-the-first-avenger/watch?locale=BR"
-  }
+  },
+  "essencial": true
  },
  {
   "id": "os-vingadores",
@@ -392,7 +395,8 @@
    ],
    "aluguel": false,
    "link": "https://www.themoviedb.org/movie/24428-the-avengers/watch?locale=BR"
-  }
+  },
+  "essencial": true
  },
  {
   "id": "espetacular-homem-aranha",
@@ -998,7 +1002,8 @@
    ],
    "aluguel": false,
    "link": "https://www.themoviedb.org/movie/299536-avengers-infinity-war/watch?locale=BR"
-  }
+  },
+  "essencial": true
  },
  {
   "id": "deadpool-2",
@@ -1148,7 +1153,8 @@
    ],
    "aluguel": false,
    "link": "https://www.themoviedb.org/movie/299534-avengers-endgame/watch?locale=BR"
-  }
+  },
+  "essencial": true
  },
  {
   "id": "fenix-negra",
@@ -1322,7 +1328,8 @@
    ],
    "aluguel": false,
    "link": "https://www.themoviedb.org/tv/84958-loki/watch?locale=BR"
-  }
+  },
+  "essencial": true
  },
  {
   "id": "viuva-negra",
@@ -1396,7 +1403,8 @@
    ],
    "aluguel": false,
    "link": "https://www.themoviedb.org/movie/566525-shang-chi-and-the-legend-of-the-ten-rings/watch?locale=BR"
-  }
+  },
+  "essencial": true
  },
  {
   "id": "venom-carnificina",
@@ -1502,7 +1510,8 @@
    ],
    "aluguel": true,
    "link": "https://www.themoviedb.org/movie/634649-spider-man-no-way-home/watch?locale=BR"
-  }
+  },
+  "essencial": true
  },
  {
   "id": "morbius",
@@ -1545,7 +1554,8 @@
    ],
    "aluguel": false,
    "link": "https://www.themoviedb.org/movie/453395-doctor-strange-in-the-multiverse-of-madness/watch?locale=BR"
-  }
+  },
+  "essencial": true
  },
  {
   "id": "ms-marvel",
@@ -1619,7 +1629,8 @@
    ],
    "aluguel": false,
    "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=BR"
-  }
+  },
+  "essencial": true
  },
  {
   "id": "quantumania",
@@ -1693,7 +1704,8 @@
    ],
    "aluguel": false,
    "link": "https://www.themoviedb.org/tv/84958-loki/watch?locale=BR"
-  }
+  },
+  "essencial": true
  },
  {
   "id": "as-marvels",
@@ -1786,7 +1798,8 @@
    ],
    "aluguel": false,
    "link": "https://www.themoviedb.org/movie/533535-deadpool-wolverine/watch?locale=BR"
-  }
+  },
+  "essencial": true
  },
  {
   "id": "venom-ultima-rodada",
@@ -1892,7 +1905,8 @@
    ],
    "aluguel": false,
    "link": "https://www.themoviedb.org/movie/822119-captain-america-brave-new-world/watch?locale=BR"
-  }
+  },
+  "essencial": true
  },
  {
   "id": "demolidor-renascido-t1",
@@ -1942,7 +1956,8 @@
    ],
    "aluguel": false,
    "link": "https://www.themoviedb.org/movie/986056-thunderbolts/watch?locale=BR"
-  }
+  },
+  "essencial": true
  },
  {
   "id": "quarteto-fantastico",
@@ -1966,7 +1981,8 @@
    ],
    "aluguel": false,
    "link": "https://www.themoviedb.org/movie/617126-the-fantastic-4-first-steps/watch?locale=BR"
-  }
+  },
+  "essencial": true
  },
  {
   "id": "um-novo-dia",
