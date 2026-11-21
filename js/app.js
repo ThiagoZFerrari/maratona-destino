@@ -190,7 +190,7 @@ function atualizarCard(id) {
 function atualizarContagens() {
   document.querySelectorAll("[data-contagem]").forEach(el => {
     const b = Number(el.dataset.contagem);
-    const doBloco = ITENS.filter(i => i.bloco === b);
+    const doBloco = ITENS.filter(i => i.bloco === b && (filtro !== "essenciais" || i.essencial));
     el.textContent = `${doBloco.filter(i => visto(i.id)).length} de ${doBloco.length}`;
   });
 }
