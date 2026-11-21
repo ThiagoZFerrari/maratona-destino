@@ -104,9 +104,18 @@ function render() {
   const main = $("#lista");
   main.innerHTML = "";
   let mostrados = 0;
+  if (filtro === "essenciais") {
+    const ess = ITENS.filter(i => i.essencial), feitos = ess.filter(i => visto(i.id)).length;
+    const min = ess.filter(i => !visto(i.id)).reduce((t, i) => t + (i.duracao || (i.tipo === "serie" ? 300 : 0)), 0);
+    const r = document.createElement("div");
+    r.className = "resumo-essenciais";
+    r.innerHTML = `<b>⭐ Maratona essencial: ${feitos} de ${ess.length} vistos</b>
+      <span>É a lista oficial que a Marvel recomenda antes de Doutor Destino.${feitos < ess.length ? ` Faltam cerca de ${Math.round(min / 60)} horas.` : " Lição de casa feita! 🎉"}</span>`;
+    main.appendChild(r);
+  }
   for (const b of Object.keys(BLOCOS).map(Number)) {
     const doBloco = ITENS.filter(i => i.bloco === b);
-    const vis = doBloco.filter(i => frOn[i.franquia] && (filtro === "todos" || (filtro === "vistos") === visto(i.id)));
+    const vis = doBloco.filter(i => frOn[i.franquia] && (filtro === "todos" || (filtro === "essenciais" ? !!i.essencial : (filtro === "vistos") === visto(i.id))));
     if (!vis.length) continue;
     mostrados += vis.length;
     const sp = spotifyEmbed(((CFG.blocos || {})[b] || {}).spotify);
@@ -151,7 +160,7 @@ function criarCard(it) {
   el.innerHTML = `
     <button class="capa" type="button" aria-label="Detalhes de ${esc(it.titulo)}">
       ${it.poster ? `<img src="${IMG}w342${it.poster}" alt="" loading="lazy" decoding="async">` : gibi}
-      <span class="tags"><span class="tag">#${num(it)}</span><span class="tag fr">${it.tipo === "serie" ? "Série" : "Filme"}</span></span>
+      <span class="tags"><span class="tag">#${num(it)}${it.essencial ? " ⭐" : ""}</span><span class="tag fr">${it.tipo === "serie" ? "Série" : "Filme"}</span></span>
       <span class="carimbo" aria-hidden="true">VISTO!</span>
     </button>
     <div class="card-corpo">
@@ -828,9 +837,10 @@ function iniciarUI() {
   $("#btnConquistas").onclick = () => { renderConquistas(); $("#dlgConquistas").showModal(); };
   $("#btnCard").onclick = gerarCard;
   $("#btnProximo").onclick = () => {
-    const it = ITENS.find(i => !visto(i.id));
-    if (!it) { aviso("Você já viu tudo!"); return; }
-    if (filtro !== "todos" || !frOn[it.franquia]) {
+    const soEss = filtro === "essenciais";
+    const it = ITENS.find(i => !visto(i.id) && (!soEss || i.essencial));
+    if (!it) { aviso(soEss ? "Você já viu todos os essenciais!" : "Você já viu tudo!"); return; }
+    if ((filtro !== "todos" && !soEss) || !frOn[it.franquia]) {
       filtro = "todos";
       Object.keys(frOn).forEach(k => { frOn[k] = true; });
       document.querySelectorAll(".seg button").forEach(x => x.setAttribute("aria-pressed", x.dataset.f === "todos"));
