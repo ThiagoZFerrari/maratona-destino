@@ -219,7 +219,9 @@ function renderProxima() {
     box.innerHTML = `<div class="wrap"><div class="proxima"><div class="prox-txt"><span class="prox-rotulo">Maratona completa</span><h2>Agora é só esperar o dia 17!</h2></div></div></div>`;
     return;
   }
-  const bg = it.backdrop ? ` style="--bg:url('${IMG}w1280${it.backdrop}')"` : "";
+  // No celular a imagem de fundo menor (w780) já fica nítida e carrega bem mais rápido
+  const tamFundo = window.innerWidth > 800 ? "w1280" : "w780";
+  const bg = it.backdrop ? ` style="--bg:url('${IMG}${tamFundo}${it.backdrop}')"` : "";
   box.innerHTML = `
     <div class="wrap"><div class="proxima${it.backdrop ? " com-fundo" : ""}"${bg}>
       <div class="prox-txt">
