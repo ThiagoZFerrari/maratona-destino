@@ -1,4 +1,4 @@
--- Banco da Maratona Destino (rodar no SQL Editor do Supabase)
+-- Banco da Maratona Destino
 
 -- Uma linha por usuário com o progresso e as conquistas
 create table if not exists public.progresso (
