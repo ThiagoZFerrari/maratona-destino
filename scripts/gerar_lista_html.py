@@ -1,14 +1,7 @@
 #!/usr/bin/env python3
 """
-Escreve a lista dos títulos em HTML puro dentro do index.html, entre as marcações
-LISTA-ESTATICA:INICIO e LISTA-ESTATICA:FIM.
-
-Pra que serve: o Google e as prévias de link (WhatsApp, Instagram) nem sempre
-rodam JavaScript. Com a lista no HTML, eles enxergam os 77 títulos. Quem abre o
-site normalmente não vê essa lista: o CSS esconde e o app.js troca pelos cards.
-
-Uso (na pasta do projeto), sempre que mudar o data/lista.json:
-    python scripts/gerar_lista_html.py
+Escreve a lista em HTML puro no index.html, pro Google ler sem JavaScript.
+Uso: python scripts/gerar_lista_html.py  (rodar ao mudar data/lista.json)
 """
 import html
 import json

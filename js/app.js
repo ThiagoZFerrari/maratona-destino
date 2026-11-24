@@ -34,7 +34,7 @@ let filtro = "todos";
 const frOn = { mcu: true, xmen: true, sony: true, netflix: true };
 let sb = null, sessao = null, sincronizado = false, stats = null, envioT = null;
 
-// ============ estado local ============
+// estado local
 function carregarLocal() {
   try {
     const e = JSON.parse(localStorage.getItem(CHAVE));
@@ -48,7 +48,7 @@ const visto = id => Object.prototype.hasOwnProperty.call(estado.vistos, id);
 const totalVistos = () => ITENS.filter(i => visto(i.id)).length;
 const diasRestantes = () => { const h = new Date(); h.setHours(0, 0, 0, 0); return Math.round((ESTREIA - h) / 86400000); };
 
-// ============ dados ============
+// dados
 async function carregarDados() {
   for (const url of ["data/filmes.json", "data/lista.json"]) {
     try {
@@ -59,7 +59,7 @@ async function carregarDados() {
   throw new Error("sem dados");
 }
 
-// ============ textos auxiliares ============
+// textos auxiliares
 function duracaoTxt(it) {
   if (it.duracao) { const h = Math.floor(it.duracao / 60), m = it.duracao % 60; return `, ${h ? h + "h" : ""}${String(m).padStart(h ? 2 : 1, "0")}min`; }
   if (it.episodios) return `, ${it.episodios} episódios`;
@@ -99,7 +99,7 @@ async function carregarSpotify() {
   } catch (_) {}
 }
 
-// ============ lista ============
+// lista
 function render() {
   const main = $("#lista");
   main.innerHTML = "";
@@ -219,7 +219,7 @@ function renderProxima() {
     box.innerHTML = `<div class="wrap"><div class="proxima"><div class="prox-txt"><span class="prox-rotulo">Maratona completa</span><h2>Agora é só esperar o dia 17!</h2></div></div></div>`;
     return;
   }
-  // No celular a imagem de fundo menor (w780) já fica nítida e carrega bem mais rápido
+  // No celular a imagem menor já basta e carrega mais rápido
   const tamFundo = window.innerWidth > 800 ? "w1280" : "w780";
   const bg = it.backdrop ? ` style="--bg:url('${IMG}${tamFundo}${it.backdrop}')"` : "";
   box.innerHTML = `
@@ -238,7 +238,7 @@ function renderProxima() {
   box.querySelector('[data-a="detalhe"]').onclick = () => abrirDetalhe(it.id);
 }
 
-// ============ marcar ============
+// marcar
 function alternar(id) {
   if (visto(id)) delete estado.vistos[id];
   else estado.vistos[id] = Date.now();
@@ -251,7 +251,7 @@ function alternar(id) {
   if ($("#dlgDetalhe").open && detalheAtual === id) preencherDetalhe();
 }
 
-// ============ detalhe ============
+// detalhe
 let detalheAtual = null;
 function abrirDetalhe(id) {
   detalheAtual = id;
@@ -291,7 +291,7 @@ function preencherDetalhe() {
   d.querySelector('[data-a="marcar"]').onclick = () => alternar(it.id);
 }
 
-// ============ conquistas ============
+// conquistas
 function contexto() {
   return {
     vistos: new Set(ITENS.filter(i => visto(i.id)).map(i => i.id)),
@@ -372,7 +372,7 @@ function renderConquistas() {
   d.querySelector(".fechar").onclick = () => d.close();
 }
 
-// ============ nuvem (Supabase) ============
+// nuvem (Supabase)
 function iniciarNuvem() {
   if (!CFG.supabaseUrl || !CFG.supabaseAnonKey || !window.supabase) return;
   sb = window.supabase.createClient(CFG.supabaseUrl, CFG.supabaseAnonKey, { auth: { flowType: "implicit", detectSessionInUrl: true, persistSession: true } });
@@ -429,7 +429,7 @@ async function sair() {
   await sb.auth.signOut();
   aviso("Você saiu. Seu progresso continua salvo neste aparelho.");
 }
-// LGPD: apaga a conta e o progresso na nuvem (se logado) e tudo deste navegador
+// LGPD: apaga a conta, o progresso na nuvem e os dados locais
 async function apagarDados() {
   const tinhaConta = !!(sb && sessao);
   if (tinhaConta) {
@@ -489,7 +489,7 @@ async function carregarStats() {
   if ($("#dlgConquistas").open) renderConquistas();
 }
 
-// ============ contador de visitas (GoatCounter) ============
+// contador de visitas (GoatCounter)
 function iniciarVisitas() {
   const code = CFG.goatcounter;
   if (!code) return;
@@ -504,7 +504,7 @@ function iniciarVisitas() {
     .catch(() => {});
 }
 
-// ============ trilha sonora ============
+// trilha sonora
 const Som = (() => {
   const blocos = CFG.blocos || {};
   const ativo = Object.values(blocos).some(b => b && b.musica);
@@ -558,11 +558,8 @@ const Som = (() => {
   return { iniciar, tocar, ativo };
 })();
 
-// ============ trilha automática do filme (Spotify) ============
-// Toca o álbum da trilha da "Próxima parada" e troca sozinho quando você marca o filme como visto.
-// Os navegadores só deixam tocar som depois que a pessoa interage com a página,
-// então a primeira vez precisa de um clique em "Trilha automática". Depois disso a escolha
-// fica salva, e nas próximas visitas a música começa no primeiro toque em qualquer lugar.
+// trilha automática do filme (Spotify)
+// O navegador só libera som depois de uma interação, por isso o primeiro clique.
 const TrilhaFilme = (() => {
   const PREF = "maratona-trilha-auto";
   let ativo = false, ligado = false, controller = null, carregandoApi = false;
@@ -581,7 +578,7 @@ const TrilhaFilme = (() => {
     tocarQuandoPronto = false;
     controller.play();
   }
-  // Se o evento "ready" não vier depois de trocar o álbum, tenta tocar mesmo assim
+  // Se o "ready" não vier, tenta tocar mesmo assim
   function playDeReserva() {
     clearTimeout(reservaT);
     reservaT = setTimeout(() => { if (tocarQuandoPronto) darPlay(); }, 2500);
@@ -621,7 +618,7 @@ const TrilhaFilme = (() => {
     dock.dataset.ligado = ligado;
     btn.setAttribute("aria-pressed", ligado);
     btn.textContent = ligado ? "⏸ Desligar" : "🎧 Trilha automática";
-    btn.hidden = ligado; // ligado: só o player e o ✕
+    btn.hidden = ligado;
     $("#trilhaPlayer").hidden = !ligado;
   }
 
@@ -633,7 +630,6 @@ const TrilhaFilme = (() => {
     else { tocarQuandoPronto = false; clearTimeout(reservaT); if (controller) controller.pause(); }
   }
 
-  // Chamado pela "Próxima parada" sempre que o próximo filme muda
   function atualizar(it) {
     itemAtual = it;
     uriAtual = it ? uriSpotify(it.spotify) : "";
@@ -644,7 +640,7 @@ const TrilhaFilme = (() => {
   }
 
   function iniciar() {
-    if (Som.ativo || !ITENS.some(i => i.spotify)) return; // a trilha por bloco (MP3) tem prioridade
+    if (Som.ativo || !ITENS.some(i => i.spotify)) return; // MP3 do bloco tem prioridade
     ativo = true;
     $("#trilhaDock").hidden = false;
     $("#trilhaBtn").onclick = alternar;
@@ -652,11 +648,10 @@ const TrilhaFilme = (() => {
     ligado = lerPref();
     atualizarUI();
     if (ligado) {
-      // Espera o primeiro toque na página, que é quando o navegador libera o som
       const primeiroToque = e => {
         document.removeEventListener("pointerdown", primeiroToque, true);
         document.removeEventListener("keydown", primeiroToque, true);
-        if (e.target.closest && e.target.closest("#trilhaBtn, #trilhaFechar")) return; // os próprios botões já resolvem
+        if (e.target.closest && e.target.closest("#trilhaBtn, #trilhaFechar")) return;
         tocar();
       };
       document.addEventListener("pointerdown", primeiroToque, true);
@@ -677,7 +672,7 @@ function observarBlocos() {
   document.querySelectorAll(".bloco").forEach(s => observador.observe(s));
 }
 
-// ============ Google Analytics (só com consentimento) ============
+// Google Analytics (só com consentimento)
 const PREF_ANALYTICS = "maratona-analytics";
 function lerConsentimento() { try { return localStorage.getItem(PREF_ANALYTICS); } catch (_) { return null; } }
 function salvarConsentimento(v) { try { localStorage.setItem(PREF_ANALYTICS, v); } catch (_) {} }
@@ -718,9 +713,9 @@ function iniciarAnalytics() {
   else if (c !== "nao") caixa.hidden = false;
 }
 
-// ============ apoie a maratona (Pix) ============
+// apoie a maratona (Pix)
 function iniciarApoio() {
-  if (!CFG.pixCopiaECola) return; // sem código Pix no config.js, o botão fica escondido
+  if (!CFG.pixCopiaECola) return;
   $("#btnApoiar").hidden = false;
   $("#btnApoiar").onclick = abrirApoio;
 }
@@ -759,7 +754,7 @@ function abrirApoio() {
   d.showModal();
 }
 
-// ============ card pros stories ============
+// card pros stories
 async function gerarCard() {
   try { await Promise.all([document.fonts.load("100px Bangers"), document.fonts.load("800 40px Archivo")]); } catch (_) {}
   if (!estado.eventos.compartilhou) { estado.eventos.compartilhou = Date.now(); persistir(); avaliarConquistas(); }
@@ -824,7 +819,7 @@ async function gerarCard() {
   aviso("Card baixado! É só postar nos stories.");
 }
 
-// ============ controles ============
+// controles
 function iniciarUI() {
   document.querySelectorAll(".seg button").forEach(b => b.addEventListener("click", () => {
     filtro = b.dataset.f;
@@ -886,7 +881,7 @@ function iniciarUI() {
   });
 }
 
-// ============ início ============
+// início
 async function iniciar() {
   iniciarUI();
   try { ITENS = await carregarDados(); }
