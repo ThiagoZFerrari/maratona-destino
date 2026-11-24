@@ -1,14 +1,8 @@
 #!/usr/bin/env python3
 """
-Procura no Spotify o álbum da trilha sonora de cada título de data/lista.json
-e salva o resultado em data/spotify.json.
-
-Uso (na pasta do projeto):
-    python scripts/gerar_spotify.py CLIENT_ID CLIENT_SECRET
-
-Pra corrigir um álbum errado: abra data/spotify.json e troque o link do título
-pelo link do álbum certo (Spotify > ... > Compartilhar > Copiar link do álbum).
-Itens marcados com "manual": true nunca são sobrescritos pelo script.
+Busca no Spotify o álbum da trilha de cada título e salva em data/spotify.json.
+Uso: python scripts/gerar_spotify.py CLIENT_ID CLIENT_SECRET
+Itens com "manual": true não são sobrescritos.
 """
 import base64
 import json

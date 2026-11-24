@@ -1,31 +1,22 @@
 window.MARATONA_CONFIG = {
 
-  // Endereço final do site (usado no link do e-mail de login e no card dos stories)
-  // Ex.: "https://seuusuario.github.io/maratona-destino/"
+  // Endereço do site (link do e-mail de login e card dos stories)
   siteUrl: "https://maratonamultiverso.com.br/",
 
-  // ---- Supabase (login + salvar conquistas na nuvem + estatísticas da comunidade)
-  // Pegue em: Supabase > Project Settings > API
-  // A "anon key" pode ficar pública, a segurança é feita pelas regras do schema.sql
+  // Supabase (Project Settings > API). A anon key pode ser pública: quem protege é o schema.sql
   supabaseUrl: "https://zmfkmzyhwcpoqzrkgcjm.supabase.co",
   supabaseAnonKey: "sb_publishable_RjVt8zfYR4QPIXTUzDYSsQ_7Piy4nfI",
 
-  // ---- GoatCounter (contador de acessos)
-  // Se o seu painel é https://maratona.goatcounter.com, coloque só "maratona"
+  // GoatCounter: só o código do painel (ex.: "maratona")
   goatcounter: "",
 
-  // ---- Doação por Pix (deixe vazio pra esconder o botão "Apoie a maratona")
-  // Cole aqui o código "Pix copia e cola" gerado no app do banco, com CHAVE ALEATÓRIA e sem valor definido.
-  // O QR Code é gerado automaticamente a partir desse código.
+  // Pix copia e cola (chave aleatória, sem valor). Vazio esconde o botão
   pixCopiaECola: "00020126580014BR.GOV.BCB.PIX0136843f32bc-6298-4341-889f-baad685d900d5204000053039865802BR5924Thiago Zimermann Ferrari6009SAO PAULO62140510dlf3NPc2uZ6304DE32",
 
-  // ---- Google Analytics via Google Tag Manager (deixe vazio pra desligar)
-  // Só carrega se o visitante aceitar no aviso de cookies.
+  // Google Tag Manager. Só carrega se aceitar os cookies; vazio desliga
   gtm: "GTM-PH8SFDGN",
 
-  // ---- Trilha de cada bloco
-  // musica: arquivo MP3 livre de direitos dentro da pasta /musica (ex.: "musica/bloco1.mp3")
-  // spotify: link de playlist/álbum do Spotify (ex.: "https://open.spotify.com/playlist/...")
+  // Trilha por bloco: musica = MP3 em /musica, spotify = link de playlist ou álbum
   blocos: {
     1: { musica: "", spotify: "" },
     2: { musica: "", spotify: "" },

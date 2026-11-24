@@ -1,13 +1,7 @@
 #!/usr/bin/env python3
 """
-Gera data/filmes.json a partir de data/lista.json usando a API do TMDB.
-Busca cartaz, imagem de fundo, sinopse, duração e onde assistir no Brasil.
-
-Uso (na pasta do projeto):
-    python scripts/gerar_dados.py SUA_CHAVE_DO_TMDB
-
-Aceita tanto a "Chave da API" (v3) quanto o "Token de leitura" (v4).
-Rode de novo sempre que quiser atualizar o "onde assistir".
+Gera data/filmes.json com dados do TMDB (cartaz, sinopse, onde assistir).
+Uso: python scripts/gerar_dados.py CHAVE_TMDB  (chave v3 ou token v4)
 """
 import json
 import os

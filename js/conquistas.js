@@ -1,9 +1,4 @@
-// ============================================================
-//  CONQUISTAS
-//  Para criar uma nova: copie uma linha, mude o id (único!), o ícone,
-//  o nome, a descrição, a categoria e a regra (check).
-//  Uma conquista desbloqueada nunca é perdida, mesmo se desmarcar filmes.
-// ============================================================
+// Conquistas. Pra criar uma, copie uma linha e troque o id (único) e a regra (check).
 window.CONQUISTAS = (() => {
   const todos = ids => c => ids.every(id => c.vistos.has(id));
   const qtd = n => c => c.vistos.size >= n;
@@ -31,7 +26,7 @@ window.CONQUISTAS = (() => {
   };
 
   return [
-    // ---------- MARCOS ----------
+    // Marcos
     { id: "primeiro-passo", icone: "🎬", cat: "Marcos", nome: "Primeiro Passo", desc: "Marque seu primeiro filme ou série.", check: qtd(1) },
     { id: "esquentando", icone: "🔥", cat: "Marcos", nome: "Esquentando os Motores", desc: "Marque 5 itens.", check: qtd(5) },
     { id: "dez", icone: "🔟", cat: "Marcos", nome: "Dez na Conta", desc: "Marque 10 itens.", check: qtd(10) },
@@ -40,7 +35,7 @@ window.CONQUISTAS = (() => {
     { id: "sessenta", icone: "🚀", cat: "Marcos", nome: "Quase Lá, Vingador", desc: "Marque 60 itens.", check: qtd(60) },
     { id: "tudo", icone: "👑", cat: "Marcos", nome: "Pronto pro Destino", desc: "Complete a maratona inteira.", check: c => c.vistos.size >= c.itens.length },
 
-    // ---------- BLOCOS ----------
+    // Blocos
     { id: "bloco-1", icone: "📼", cat: "Blocos", nome: "Raiz dos Anos 2000", desc: "Complete o Bloco 1.", check: bloco(1) },
     { id: "bloco-2", icone: "🛡️", cat: "Blocos", nome: "Iniciativa Completa", desc: "Complete o Bloco 2.", check: bloco(2) },
     { id: "bloco-3", icone: "🌍", cat: "Blocos", nome: "Universo em Expansão", desc: "Complete o Bloco 3.", check: bloco(3) },
@@ -49,14 +44,14 @@ window.CONQUISTAS = (() => {
     { id: "bloco-6", icone: "🏁", cat: "Blocos", nome: "Reta Final", desc: "Complete o Bloco 6.", check: bloco(6) },
     { id: "bloco-7", icone: "🎟️", cat: "Blocos", nome: "Aquecimento Final", desc: "Complete o Bloco 7.", check: bloco(7) },
 
-    // ---------- FRANQUIAS ----------
+    // Franquias
     { id: "fr-xmen", icone: "🧬", cat: "Franquias", nome: "Mutante de Carteirinha", desc: "Veja todos os X-Men da Fox.", check: grupo(i => i.franquia === "xmen") },
     { id: "fr-sony", icone: "🕸️", cat: "Franquias", nome: "Teia Completa", desc: "Veja todos os filmes da Sony.", check: grupo(i => i.franquia === "sony") },
     { id: "fr-netflix", icone: "🌃", cat: "Franquias", nome: "Cozinha do Inferno", desc: "Veja todo o Demolidor da Netflix e Os Defensores.", check: grupo(i => i.franquia === "netflix") },
     { id: "fr-mcu-filmes", icone: "🎞️", cat: "Franquias", nome: "Cinéfilo do MCU", desc: "Veja todos os filmes do MCU.", check: grupo(i => i.franquia === "mcu" && i.tipo === "filme") },
     { id: "fr-series", icone: "🛋️", cat: "Franquias", nome: "Maratonista de Sofá", desc: "Veja todas as séries da lista.", check: grupo(i => i.tipo === "serie") },
 
-    // ---------- SAGAS ----------
+    // Sagas
     { id: "saga-vingadores", icone: "⚡", cat: "Sagas", nome: "Vingadores, Avante!", desc: "Veja os quatro filmes dos Vingadores.", check: todos(["os-vingadores", "era-de-ultron", "guerra-infinita", "ultimato"]) },
     { id: "saga-ferro", icone: "🦾", cat: "Sagas", nome: "Gênio, Bilionário, Filantropo", desc: "Veja a trilogia Homem de Ferro.", check: todos(["homem-de-ferro", "homem-de-ferro-2", "homem-de-ferro-3"]) },
     { id: "saga-thor", icone: "🔨", cat: "Sagas", nome: "Digno do Martelo", desc: "Veja os quatro filmes do Thor.", check: todos(["thor", "thor-mundo-sombrio", "thor-ragnarok", "amor-e-trovao"]) },
@@ -78,7 +73,7 @@ window.CONQUISTAS = (() => {
     { id: "saga-xmen-classicos", icone: "🎓", cat: "Sagas", nome: "Escola Xavier", desc: "Veja a trilogia original dos X-Men.", check: todos(["x-men", "x-men-2", "x-men-confronto-final"]) },
     { id: "ultimato-duplo", icone: "♾️", cat: "Sagas", nome: "Ultimato Duplo", desc: "Veja o Ultimato original e o Encore.", check: todos(["ultimato", "ultimato-encore"]) },
 
-    // ---------- DESAFIOS ----------
+    // Desafios
     { id: "raiz", icone: "🍿", cat: "Desafios", nome: "Maratonista Raiz", desc: "Marque 3 itens no mesmo dia.", check: c => maxNoDia(c) >= 3 },
     { id: "virada", icone: "🌅", cat: "Desafios", nome: "Virada Heroica", desc: "Marque 5 itens no mesmo dia.", check: c => maxNoDia(c) >= 5 },
     { id: "semana", icone: "📅", cat: "Desafios", nome: "Semana Heroica", desc: "Marque pelo menos 1 item por 7 dias seguidos.", check: c => maiorSequencia(c) >= 7 },
@@ -87,7 +82,7 @@ window.CONQUISTAS = (() => {
     { id: "nuvem", icone: "☁️", cat: "Desafios", nome: "Agente Registrado", desc: "Entre na sua conta pra salvar na nuvem.", check: c => !!c.eventos.nuvem },
     { id: "antes-estreia", icone: "⏰", cat: "Desafios", nome: "Pontualidade Asgardiana", desc: "Complete tudo antes da estreia de 17/12.", check: c => c.vistos.size >= c.itens.length && Math.max(...[...c.vistos].map(id => c.ts[id])) < c.estreia },
 
-    // ---------- SECRETAS ----------
+    // Secretas
     { id: "coruja", icone: "🦉", cat: "Secretas", secreta: true, nome: "Vigilante Noturno", desc: "Marque algo entre meia-noite e 5 da manhã.", check: c => [...c.vistos].some(id => new Date(c.ts[id]).getHours() < 5) },
     { id: "coragem", icone: "🫣", cat: "Secretas", secreta: true, nome: "Coragem de Vingador", desc: "Sobreviva a Morbius, Madame Teia e Kraven.", check: todos(["morbius", "madame-teia", "kraven"]) },
     { id: "na-ordem", icone: "📏", cat: "Secretas", secreta: true, nome: "Na Ordem Certinha", desc: "Marque os 20 primeiros itens exatamente na ordem da lista.", check: c => {

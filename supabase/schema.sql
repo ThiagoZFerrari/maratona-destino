@@ -1,6 +1,4 @@
--- ============================================================
---  Banco da Maratona Destino (cole tudo no SQL Editor do Supabase e clique em Run)
--- ============================================================
+-- Banco da Maratona Destino (rodar no SQL Editor do Supabase)
 
 -- Uma linha por usuário com o progresso e as conquistas
 create table if not exists public.progresso (
@@ -26,7 +24,7 @@ drop policy if exists "atualizar o próprio progresso" on public.progresso;
 create policy "atualizar o próprio progresso" on public.progresso
   for update using (auth.uid() = user_id) with check (auth.uid() = user_id);
 
--- Estatísticas públicas da comunidade (só números agregados, nunca dados de alguém)
+-- Estatísticas públicas (só números agregados)
 create or replace function public.estatisticas(total int default 77)
 returns json
 language sql
@@ -50,8 +48,7 @@ $$;
 revoke all on function public.estatisticas(int) from public;
 grant execute on function public.estatisticas(int) to anon, authenticated;
 
--- Apagar a própria conta (LGPD): remove o login e, em cascata, a linha de progresso.
--- Só apaga a conta de quem está logado (auth.uid()); visitante sem login não apaga nada.
+-- LGPD: apaga a conta de quem está logado e, em cascata, o progresso
 create or replace function public.apagar_minha_conta()
 returns void
 language sql
@@ -64,14 +61,13 @@ $$;
 revoke all on function public.apagar_minha_conta() from public, anon;
 grant execute on function public.apagar_minha_conta() to authenticated;
 
--- Limite de tamanho: impede que alguém lote o banco gravando um "progresso" gigante
--- (77 títulos e 51 conquistas ocupam só alguns KB)
+-- Limite de tamanho pra ninguém lotar o banco
 alter table public.progresso drop constraint if exists progresso_tamanho;
 alter table public.progresso add constraint progresso_tamanho check (
   pg_column_size(vistos) < 16384 and pg_column_size(conquistas) < 16384 and pg_column_size(eventos) < 8192
 );
 
--- A função rls_auto_enable (criada pelo Supabase) não precisa ser chamada pelo site
+-- O site não usa a rls_auto_enable do Supabase
 do $$
 begin
   if to_regprocedure('public.rls_auto_enable()') is not null then
