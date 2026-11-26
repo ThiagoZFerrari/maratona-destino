@@ -38,11 +38,14 @@ js/app.js lógica principal
 data/lista.json os 77 títulos na ordem da maratona
 data/filmes.json dados gerados a partir do TMDB
 data/spotify.json links das trilhas no Spotify
+data/essenciais.json texto de por que cada essencial importa
+essenciais-doutor-destino/ página dos essenciais (gerada pelo script)
 img/ ícones do site e imagem de prévia dos links (og-image)
 js/vendor/qrcode.js gerador do QR Code do Pix
 scripts/gerar_dados.py script que busca os dados no TMDB
 scripts/gerar_lista_html.py script que escreve a lista e os dados estruturados no index.html (SEO)
 scripts/gerar_spotify.py script que gera o spotify.json
+scripts/gerar_essenciais.py script que gera a página dos essenciais
 supabase/schema.sql estrutura do banco de dados
 musica/ trilhas livres de direitos (opcional, crie a pasta se for usar MP3)
 
@@ -73,6 +76,14 @@ O Google e as prévias de link nem sempre rodam JavaScript, então o `index.html
 
 ```
 python scripts/gerar_lista_html.py
+```
+
+## Página dos essenciais (SEO)
+
+A página `/essenciais-doutor-destino/` mostra só os títulos com `essencial: true` no `lista.json`, com o texto de cada um vindo do `data/essenciais.json`. Ela mostra o que a pessoa já marcou e o botão leva pro checklist já na aba Essenciais (`/?filtro=essenciais`). Sempre que mudar os essenciais ou os textos, rode:
+
+```
+python scripts/gerar_essenciais.py
 ```
 
 ## Banco de dados
