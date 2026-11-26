@@ -459,26 +459,56 @@ function abrirLogin() {
       <form class="form-login">
         <label for="email">Seu e-mail</label>
         <input id="email" type="email" required autocomplete="email" placeholder="voce@email.com">
+        ${CFG.turnstileSiteKey ? `<div class="captcha"></div>` : ""}
         <button class="btn alt grande" type="submit">Enviar link de acesso</button>
         <p class="msg" aria-live="polite"></p>
       </form>
     </div>`;
   d.querySelector(".fechar").onclick = () => d.close();
   const form = d.querySelector("form"), msg = d.querySelector(".msg"), btn = form.querySelector("button");
+  // Anti-robô: o botão só libera depois que o Turnstile confirma
+  let captchaToken = "", widget = null;
+  if (CFG.turnstileSiteKey) {
+    btn.disabled = true;
+    carregarTurnstile().then(() => {
+      widget = window.turnstile.render(d.querySelector(".captcha"), {
+        sitekey: CFG.turnstileSiteKey, language: "pt-br",
+        callback: t => { captchaToken = t; btn.disabled = false; },
+        "expired-callback": () => { captchaToken = ""; btn.disabled = true; },
+        "error-callback": () => { msg.textContent = "A verificação anti-robô falhou. Recarregue a página."; }
+      });
+    }).catch(() => { msg.textContent = "Não consegui carregar a verificação anti-robô. Confira a internet e recarregue."; });
+  }
   form.onsubmit = async e => {
     e.preventDefault();
     btn.disabled = true;
     msg.textContent = "Enviando...";
     const { error } = await sb.auth.signInWithOtp({
       email: form.email.value.trim(),
-      options: { emailRedirectTo: CFG.siteUrl || location.origin + location.pathname }
+      options: { emailRedirectTo: CFG.siteUrl || location.origin + location.pathname, captchaToken: captchaToken || undefined }
     });
-    btn.disabled = false;
+    // Cada token do Turnstile vale uma vez só
+    if (widget !== null) { captchaToken = ""; window.turnstile.reset(widget); }
+    else btn.disabled = false;
     msg.textContent = error
       ? "Não consegui enviar agora. Espere alguns minutos e tente de novo."
       : "Pronto! Abra o link que chegou no seu e-mail neste mesmo aparelho.";
   };
   d.showModal();
+}
+// Carrega o script do Turnstile só quando abre o login
+let turnstileP = null;
+function carregarTurnstile() {
+  if (window.turnstile) return Promise.resolve();
+  if (!turnstileP) turnstileP = new Promise((ok, erro) => {
+    const s = document.createElement("script");
+    s.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
+    s.async = true;
+    s.onload = ok;
+    s.onerror = () => { turnstileP = null; erro(); };
+    document.head.appendChild(s);
+  });
+  return turnstileP;
 }
 async function carregarStats() {
   if (!sb || !ITENS.length) return;
