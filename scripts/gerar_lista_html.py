@@ -50,6 +50,32 @@ if not padrao.search(pagina):
     raise SystemExit("Não achei as marcações LISTA-ESTATICA no index.html.")
 pagina = padrao.sub(lambda m: m.group(1) + "\n".join(linhas) + "\n" + m.group(2), pagina)
 
+# Dados estruturados (Schema.org) no <head>: nome do site e a lista em ordem
+URL = "https://maratonamultiverso.com.br/"
+schema = [
+    {"@context": "https://schema.org", "@type": "WebSite",
+     "name": "Maratona Multiverso", "alternateName": "Rumo ao Doutor Destino", "url": URL,
+     "inLanguage": "pt-BR"},
+    {"@context": "https://schema.org", "@type": "ItemList",
+     "name": "Ordem dos filmes e séries Marvel antes de Vingadores: Doutor Destino",
+     "itemListOrder": "https://schema.org/ItemListOrderAscending",
+     "numberOfItems": numero,
+     "itemListElement": [
+         {"@type": "ListItem", "position": n,
+          "item": {"@type": "TVSeries" if it.get("tipo") == "serie" else "Movie",
+                   "name": it["titulo"], "dateCreated": str(it["ano"])}}
+         for n, it in enumerate(
+             [i for b in BLOCOS for i in itens if i.get("bloco") == b], start=1)]},
+]
+bloco_schema = ('<script type="application/ld+json">\n'
+                + json.dumps(schema, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+                + "\n</script>")
+padrao_schema = re.compile(r"(<!-- SCHEMA:INICIO[^>]*-->\n).*?(<!-- SCHEMA:FIM -->)", re.S)
+if padrao_schema.search(pagina):
+    pagina = padrao_schema.sub(lambda m: m.group(1) + bloco_schema + "\n" + m.group(2), pagina)
+else:
+    print("Aviso: não achei as marcações SCHEMA no index.html, pulei os dados estruturados.")
+
 with open(ARQ_HTML, "w", encoding="utf-8") as f:
     f.write(pagina)
 print(f"Lista com {numero} títulos escrita no index.html.")
