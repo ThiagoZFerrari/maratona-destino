@@ -9,7 +9,7 @@ window.MARATONA_CONFIG = {
 
   // Cloudflare Turnstile (anti-robô no login): só a Site Key, que é pública. Vazio desliga.
   // A Secret Key vai no Supabase (Authentication > Attack Protection), nunca aqui
-  turnstileSiteKey: "",
+  turnstileSiteKey: "0x4AAAAAAGUpWTaHD4vmm1Ta",
 
   // GoatCounter: só o código do painel (ex.: "maratona")
   goatcounter: "",
