@@ -7,6 +7,10 @@ window.MARATONA_CONFIG = {
   supabaseUrl: "https://zmfkmzyhwcpoqzrkgcjm.supabase.co",
   supabaseAnonKey: "sb_publishable_RjVt8zfYR4QPIXTUzDYSsQ_7Piy4nfI",
 
+  // Cloudflare Turnstile (anti-robô no login): só a Site Key, que é pública. Vazio desliga.
+  // A Secret Key vai no Supabase (Authentication > Attack Protection), nunca aqui
+  turnstileSiteKey: "",
+
   // GoatCounter: só o código do painel (ex.: "maratona")
   goatcounter: "",
 
