@@ -46,6 +46,8 @@ img{max-width:100%}
 .topbar .wrap{display:flex; align-items:center; justify-content:space-between; gap:12px; padding-top:10px; padding-bottom:10px}
 .marca{font-family:var(--display); font-size:1.7rem; letter-spacing:1px; color:var(--red); -webkit-text-stroke:1px var(--line)}
 .topbar-acoes{display:flex; align-items:center; gap:10px; flex-wrap:wrap; justify-content:flex-end}
+/* no celular o botão de conta aparece depois e quebra pra segunda linha: reserva o espaço pra página não pular (CLS) */
+@media (max-width:540px){ .js .topbar-acoes{min-height:84px; align-content:flex-start} }
 .conta{display:flex; align-items:center; gap:10px}
 .nuvem-status{font-size:.82rem; font-weight:700; color:var(--ink-soft)}
 
