@@ -92,6 +92,9 @@ h1{
 
 /* próxima parada */
 #proxima{padding:10px 0 24px}
+/* reserva o espaço do card antes da lista carregar, pra página não pular (CLS) */
+.js #proxima:empty{min-height:250px}
+@media (min-width:800px){ .js #proxima:empty{min-height:270px} }
 .proxima{
   position:relative; border:4px solid var(--line); box-shadow:8px 8px 0 var(--shadow); color:#fff;
   background:#161A3A; min-height:220px; display:flex; align-items:flex-end; overflow:hidden;
