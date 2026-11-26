@@ -159,7 +159,7 @@ function criarCard(it) {
   const gibi = `<span class="capa-gibi"><span class="titulo-gibi">${esc(it.titulo)}</span></span>`;
   el.innerHTML = `
     <button class="capa" type="button" aria-label="Detalhes de ${esc(it.titulo)}">
-      ${it.poster ? `<img src="${IMG}w342${it.poster}" alt="Cartaz de ${esc(it.titulo)} (${it.ano})" loading="lazy" decoding="async">` : gibi}
+      ${it.poster ? `<img src="${IMG}w342${it.poster}" srcset="${IMG}w185${it.poster} 185w, ${IMG}w342${it.poster} 342w" sizes="(max-width:560px) 45vw, 170px" alt="Cartaz de ${esc(it.titulo)} (${it.ano})" loading="lazy" decoding="async">` : gibi}
       <span class="tags"><span class="tag">#${num(it)}${it.essencial ? " ⭐" : ""}</span><span class="tag fr">${it.tipo === "serie" ? "Série" : "Filme"}</span></span>
       <span class="carimbo" aria-hidden="true">VISTO!</span>
     </button>
