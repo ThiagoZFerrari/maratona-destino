@@ -1,0 +1,118 @@
+/* Tema de Natal. Só vale com a classe .natal no <html>, que o js/natal.js coloca.
+   Pra desligar o tema, é só tirar as linhas do natal.css e do natal.js no index.html */
+
+/* luzinhas penduradas no topo */
+.natal .topbar{position:relative; z-index:6}
+.natal-luzes{
+  position:absolute; left:0; right:0; top:100%; height:30px; margin-top:-1px; overflow:hidden; pointer-events:none;
+  display:grid; grid-auto-flow:column; grid-auto-columns:38px; justify-content:start;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='38' height='12'%3E%3Cpath d='M0 1Q19 14 38 1' fill='none' stroke='%23343a62' stroke-width='2'/%3E%3C/svg%3E") repeat-x 0 0 / 38px 12px;
+  animation:natal-surgir .6s ease both;
+}
+.natal-luzes i{position:relative; display:block; height:30px; --c:#FF3B3B}
+.natal-luzes i:nth-child(4n+2){--c:#FFD23F}
+.natal-luzes i:nth-child(4n+3){--c:#2ECC71}
+.natal-luzes i:nth-child(4n+4){--c:#3FA9FF}
+.natal-luzes i::before{
+  content:""; position:absolute; left:50%; top:6px; width:6px; height:5px; margin-left:-3px;
+  background:#343a62; border-radius:1px;
+}
+.natal-luzes i::after{
+  content:""; position:absolute; left:50%; top:10px; width:10px; height:15px; margin-left:-5px;
+  background:var(--c); border-radius:50% 50% 50% 50% / 40% 40% 60% 60%;
+  box-shadow:0 0 6px 2px var(--c), inset -2px -3px 0 rgba(0,0,0,.18);
+  animation:natal-piscar 1.6s ease-in-out infinite;
+}
+.natal-luzes i:nth-child(odd)::after{transform:rotate(-10deg)}
+.natal-luzes i:nth-child(even)::after{transform:rotate(10deg); animation-delay:-.8s}
+.natal-luzes i:nth-child(3n)::after{animation-duration:2.3s}
+@keyframes natal-piscar{
+  0%,100%{opacity:1; box-shadow:0 0 8px 3px var(--c), inset -2px -3px 0 rgba(0,0,0,.18)}
+  50%{opacity:.35; box-shadow:0 0 0 0 transparent, inset -2px -3px 0 rgba(0,0,0,.18)}
+}
+
+/* gorro na marca */
+.natal .marca{position:relative; display:inline-block}
+.natal-gorro{
+  position:absolute; left:-11px; top:-15px; width:30px; pointer-events:none;
+  transform:rotate(-20deg); transform-origin:30% 90%; animation:natal-gorro 4s ease-in-out infinite;
+}
+.natal-gorro svg{display:block; width:100%; height:auto}
+@keyframes natal-gorro{
+  0%,80%,100%{transform:rotate(-20deg)}
+  86%{transform:rotate(-28deg) translateY(-2px)}
+  92%{transform:rotate(-14deg)}
+}
+
+/* neve acumulada em cima dos painéis */
+.natal .hero .panel::after, .natal .final .panel::after, .natal .proxima::after{
+  content:""; position:absolute; left:0; right:0; top:0; height:22px; pointer-events:none; z-index:2;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='22' viewBox='0 0 120 22'%3E%3Cpath d='M0 0H120V11C112 20 100 12 90 16C78 21 66 10 54 15C42 21 30 11 18 17C10 20 4 15 0 12Z' fill='%23fff'/%3E%3C/svg%3E") repeat-x 0 0 / 120px 22px;
+  filter:drop-shadow(0 2px 0 rgba(22,26,58,.35));
+  animation:natal-surgir .8s ease both;
+}
+.natal .proxima .prox-txt{padding-top:34px}
+
+/* enfeites balançando no painel do topo */
+.natal-enfeites{position:absolute !important; inset:0; pointer-events:none; z-index:0}
+.natal-enfeites .bola{
+  position:absolute; top:0; width:2px; height:var(--l); background:rgba(255,255,255,.75);
+  transform-origin:top center; animation:natal-balanco var(--t, 3s) ease-in-out infinite alternate; animation-delay:var(--d, 0s);
+}
+.natal-enfeites .bola::before{
+  content:""; position:absolute; left:50%; bottom:-4px; width:10px; height:7px; margin-left:-5px;
+  background:#C9CCD9; border:2px solid #161A3A; border-radius:2px;
+}
+.natal-enfeites .bola::after{
+  content:""; position:absolute; left:50%; top:calc(100% + 2px); width:var(--s, 34px); height:var(--s, 34px); margin-left:calc(var(--s, 34px) / -2);
+  border-radius:50%; border:3px solid #161A3A; background:var(--c);
+  background-image:radial-gradient(circle at 32% 30%, rgba(255,255,255,.85) 0 12%, transparent 13%),
+    repeating-linear-gradient(0deg, transparent 0 40%, rgba(255,255,255,.35) 40% 52%, transparent 52% 100%);
+  box-shadow:3px 3px 0 #161A3A;
+}
+@keyframes natal-balanco{from{transform:rotate(-9deg)} to{transform:rotate(9deg)}}
+.natal-enfeites .brilho{
+  position:absolute; color:#fff; font-size:var(--s, 18px); line-height:1; text-shadow:0 0 8px rgba(255,255,255,.9);
+  animation:natal-brilho 2.4s ease-in-out infinite; animation-delay:var(--d, 0s); opacity:0;
+}
+@keyframes natal-brilho{0%,100%{opacity:0; transform:scale(.3) rotate(0)} 50%{opacity:1; transform:scale(1) rotate(90deg)}}
+@media (max-width:560px){
+  .natal-enfeites .bola:nth-child(n+3){display:none}
+  .natal-enfeites .bola{--s:24px !important}
+}
+
+/* barra de progresso de bengala doce */
+.natal .barra i{
+  background-color:#fff;
+  background-image:linear-gradient(-45deg, var(--red) 25%, #fff 25% 50%, var(--red) 50% 75%, #fff 75%);
+  background-size:28px 28px; animation:natal-bengala 1s linear infinite;
+}
+@keyframes natal-bengala{to{background-position:28px 0}}
+
+/* contagem pro Natal e recado no final */
+.natal-stat{background:#1F8A4C !important; color:#fff !important; animation:natal-pulo 3s ease-in-out infinite}
+.natal-stat span{color:#E8FFF0}
+@keyframes natal-pulo{0%,88%,100%{transform:none} 92%{transform:translateY(-5px) rotate(-2deg)} 96%{transform:translateY(0) rotate(1deg)}}
+.natal-presente{font-weight:800; color:var(--gold)}
+
+/* botão de ligar e desligar a neve */
+.natal-toggle[aria-pressed="false"]{opacity:.55}
+
+/* neve caindo */
+.natal-neve{position:fixed; inset:0; width:100%; height:100%; pointer-events:none; z-index:30}
+
+/* trenó voando */
+.natal-treno{
+  position:fixed; left:0; top:0; z-index:31; padding:4px; border:0; background:none; font-size:2.1rem; line-height:1;
+  white-space:nowrap; filter:drop-shadow(2px 3px 0 rgba(22,26,58,.35)); will-change:transform;
+}
+.natal-treno span{display:inline-block; animation:natal-voo 1.1s ease-in-out infinite alternate}
+.natal-treno span:nth-child(2){animation-delay:-.3s}
+.natal-treno span:nth-child(3){animation-delay:-.6s}
+@keyframes natal-voo{from{transform:translateY(-4px)} to{transform:translateY(4px)}}
+.natal-rastro{position:fixed; z-index:30; pointer-events:none; font-size:1rem; line-height:1}
+
+/* explosão ao marcar um filme */
+.natal-particula{position:fixed; z-index:60; pointer-events:none; font-size:1.4rem; line-height:1; will-change:transform, opacity}
+
+@keyframes natal-surgir{from{opacity:0; transform:translateY(-6px)} to{opacity:1; transform:none}}
