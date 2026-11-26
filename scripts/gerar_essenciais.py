@@ -66,6 +66,8 @@ pagina = f"""<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-l+ZBOgG9XQFpON9zBxxrb5eDIZBZk0mXDshOBV8iYR8='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://image.tmdb.org; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>{e(titulo)}</title>
 <meta name="description" content="{e(descricao)}">
 <link rel="canonical" href="{URL_PAGINA}">

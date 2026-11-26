@@ -282,7 +282,7 @@ function preencherDetalhe() {
       ${it.sinopse ? `<p class="sinopse">${esc(it.sinopse)}</p>` : ""}
       <h3>Onde assistir</h3>
       <div class="provs">${ondeHtml}</div>
-      <p class="links"><a href="${esc((it.onde && it.onde.link) || linkBusca(it))}" target="_blank" rel="noopener">Ver todas as opções</a></p>
+      <p class="links"><a href="${esc(/^https:\/\//i.test((it.onde && it.onde.link) || "") ? it.onde.link : linkBusca(it))}" target="_blank" rel="noopener noreferrer">Ver todas as opções</a></p>
       ${it.spotify ? `<h3>Trilha sonora</h3>${playerTrilha(it)}` : ""}
       ${textoComunidade(it.id) ? `<p class="comunidade">${textoComunidade(it.id)}</p>` : ""}
       <button class="btn grande ${v ? "" : "alt"}" type="button" data-a="marcar">${v ? "Desmarcar" : "Marcar como visto"}</button>
@@ -377,7 +377,8 @@ function iniciarNuvem() {
   if (!CFG.supabaseUrl || !CFG.supabaseAnonKey || !window.supabase) return;
   sb = window.supabase.createClient(CFG.supabaseUrl, CFG.supabaseAnonKey, { auth: { flowType: "implicit", detectSessionInUrl: true, persistSession: true } });
   const erroLogin = new URLSearchParams(location.hash.slice(1) || location.search.slice(1)).get("error_description");
-  if (erroLogin) aviso("Erro no login: " + erroLogin.replace(/\+/g, " "));
+  // Mensagem fixa: o texto que vem na URL pode ser forjado por quem manda o link
+  if (erroLogin) aviso("O link de acesso expirou ou já foi usado. Peça um novo em \"Entrar pra salvar\".");
   $("#contaBox").hidden = false;
   $("#btnConta").onclick = () => sessao ? sair() : abrirLogin();
   sb.auth.onAuthStateChange((_evento, s) => {
