@@ -271,6 +271,21 @@ dialog::backdrop{background:rgba(8,10,30,.72)}
 .faq summary{cursor:pointer; font-weight:800}
 .faq p{margin:10px 0 4px; color:var(--ink-soft)}
 
+/* página dos essenciais */
+a.marca, a.btn{text-decoration:none}
+a.btn{display:inline-block}
+.ess-progresso{font-weight:800; margin:0}
+.ess-lista{list-style:none; margin:10px 0 0; padding:0; display:grid; gap:14px}
+.ess-item{display:flex; gap:14px; align-items:flex-start; border:3px solid var(--line); background:var(--card); padding:14px 16px; box-shadow:5px 5px 0 var(--shadow)}
+.ess-item.visto{opacity:.75}
+.ess-num{flex:0 0 auto; width:44px; height:44px; display:grid; place-items:center; font-family:var(--display); font-size:1.6rem; background:var(--gold); color:#161A3A; border:3px solid var(--line)}
+.ess-item.visto .ess-num{background:var(--muted)}
+.ess-corpo h2{margin:0; font-size:1.1rem}
+.ess-meta{display:block; font-weight:600; font-size:.82rem; color:var(--ink-soft)}
+.ess-corpo p{margin:6px 0 0}
+.ess-visto{display:inline-block; margin-top:6px; font-weight:800; font-size:.85rem; color:#1E7B3A}
+.ess-nota{max-width:75ch}
+
 @media (max-width:560px){
   .grid{grid-template-columns:1fr 1fr; gap:12px}
   .panel{padding:24px 18px 20px; box-shadow:6px 6px 0 var(--shadow)}

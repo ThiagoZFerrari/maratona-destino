@@ -821,6 +821,11 @@ async function gerarCard() {
 
 // controles
 function iniciarUI() {
+  // link direto pra aba Essenciais (?filtro=essenciais), usado pela página dos essenciais
+  if (new URLSearchParams(location.search).get("filtro") === "essenciais") {
+    filtro = "essenciais";
+    document.querySelectorAll(".seg button").forEach(x => x.setAttribute("aria-pressed", x.dataset.f === "essenciais"));
+  }
   document.querySelectorAll(".seg button").forEach(b => b.addEventListener("click", () => {
     filtro = b.dataset.f;
     document.querySelectorAll(".seg button").forEach(x => x.setAttribute("aria-pressed", x === b));
