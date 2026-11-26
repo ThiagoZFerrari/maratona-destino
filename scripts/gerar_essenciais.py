@@ -78,6 +78,7 @@ pagina = f"""<!DOCTYPE html>
 <meta property="og:image" content="{URL_SITE}img/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Os {total} essenciais antes de Vingadores: Doutor Destino">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#E23636">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
