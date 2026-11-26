@@ -37,10 +37,16 @@ js/conquistas.js regras das conquistas
 js/app.js lógica principal
 data/lista.json os 77 títulos na ordem da maratona
 data/filmes.json dados gerados a partir do TMDB
+data/spotify.json links das trilhas no Spotify
+img/ ícones do site e imagem de prévia dos links (og-image)
+js/vendor/qrcode.js gerador do QR Code do Pix
 scripts/gerar_dados.py script que busca os dados no TMDB
-scripts/gerar_lista_html.py script que escreve a lista dos títulos no index.html (SEO)
+scripts/gerar_lista_html.py script que escreve a lista e os dados estruturados no index.html (SEO)
+scripts/gerar_spotify.py script que gera o spotify.json
 supabase/schema.sql estrutura do banco de dados
-musica/ trilhas livres de direitos
+musica/ trilhas livres de direitos (opcional, crie a pasta se for usar MP3)
+
+Ficam na raiz de propósito: index.html, CNAME (domínio do GitHub Pages), robots.txt, sitemap.xml e favicon.ico, porque o Google e os navegadores procuram esses arquivos direto no endereço principal.
 
 
 ## Como rodar na sua máquina
